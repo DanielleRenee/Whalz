@@ -1,11 +1,15 @@
 import requests
 import os
 import sys
+import json
 
 
-f = open("beers.txt", "w")
+f = open("allbeerdata.json", "w")
 
-for i in range(1, 1264):
+
+beer_list = []
+
+for i in range(1, 1270):
     if i % 10 == 0:
 
         APIKEY = '9726819debab5cfdba5b6744dbbf1616'
@@ -22,50 +26,40 @@ for i in range(1, 1264):
 
         beer_raw = response.json()
 
+# i want to make my own dictionary. set name, beer_id, description... as the keys
+# in the dict and value as the unique beer values. 
 
-         
-        f.write('> %s\n' % (beer_raw,))
-        # write each response as a new line in beers.txt  
-        # http://www.afterhoursprogramming.com/tutorial/Python/Writing-to-Files/
-        # http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
+        for i in range(0, 50):
 
+
+            my_dict={}
+
+            my_dict['name']= beer_raw['data'][i].get('name')
+            my_dict['beer_id'] = beer_raw['data'][i].get('id')
+            my_dict['description'] = beer_raw['data'][i].get('description')
+            my_dict['name_display'] = beer_raw['data'][i].get('nameDisplay')
+            my_dict['labels'] = beer_raw['data'][i].get('labels')
+            my_dict['website'] = beer_raw['data'][i].get('website')
+            my_dict['year'] = beer_raw['data'][i].get('year')
+            my_dict['beer_variation'] = beer_raw['data'][i].get('beerVariation')
+            my_dict['beer_variation_id'] = beer_raw['data'][i].get('beerVariationId')
+            my_dict['style_id'] = beer_raw['data'][i].get('styleId')
+            my_dict['abv'] = beer_raw['data'][i].get('abv')
+            my_dict['ibu'] = beer_raw['data'][i].get('ibu')
+
+
+
+            beer_list.append(my_dict)
+
+json.dump(beer_list, f)
+
+# f.write('%s\n' % (,))
+# write each response as a new line in beers.txt  
+# http://www.afterhoursprogramming.com/tutorial/Python/Writing-to-Files/
+# http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
 
 f.close()
 
-------------------------------------------------------------
 
-for i in range(0, 49):
-
-    name = beer_raw['data'][i].get('name')
-    beer_id = beer_raw['data'][i].get('id')
-    description = beer_raw['data'][i].get('description')
-    name_display = beer_raw['data'][i].get('nameDisplay')
-    labels = beer_raw['data'][i].get('labels')
-    # website = beer_raw['data'][i].get('website')
-    year = beer_raw['data'][i].get('year')
-    beer_variation = beer_raw['data'][i].get('beerVariation')
-    beer_variation_id = beer_raw['data'][i].get('beerVariationId')
-    style_id = beer_raw['data'][i].get('styleId')
-    abv = beer_raw['data'][i].get('abv')
-    ibu = beer_raw['data'][i].get('ibu')
-
-    print name, abv
-
-------------------------------------------------------------
-
-def process_beers():
-    """Read beers file and return dictionary of {restaurant-name: score}."""
-
-    beers_txt = open('beers.txt')
-
-    beers = {}
-
-    for line in beers_txt:
-        line = line.rstrip()
-        restaurant, score = line.split(":")
-        scores[restaurant] = int(score)
-
-    return scores
- 
-
-# do a file write, add new line character add the end. 
+# converting allbeerdata to python dictionary
+beerz = json.load(open('allbeerdata.json'))
