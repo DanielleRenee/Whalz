@@ -41,7 +41,7 @@ class Beer(db.Model):
     style_id = db.Column(db.Integer, nullable=True)
     year = db.Column(db.Integer, nullable=True)
     abv = db.Column(db.Integer, nullable=True)
-    description = db.Column(db.String(1000), nullable=True)
+    description = db.Column(db.Text, nullable=True)
     beer_variation = db.Column(db.String(100), nullable=True)
     beer_variation_id = db.Column(db.String(100), nullable=True)
     ibu = db.Column(db.Integer, nullable=True)
@@ -65,7 +65,7 @@ class Inventory(db.Model):
     inventory_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     beer_code = db.Column(db.String(10), db.ForeignKey('beers.beer_code'), index=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), index=True)
-    quantity = db.Column(db.Integer)
+    quantity = db.Column(db.Integer, nullable=False)
 
 
     # Define relationship to user
@@ -81,8 +81,67 @@ class Inventory(db.Model):
     def __repr__(self):
         """Provide helpful representation when printed."""
 
-        return "<Rating inventory_id=%s beer_code=%s user_id=%s inventory=%s>" % (
+        return "<Inventory inventory_id=%s beer_code=%s user_id=%s inventory=%s>" % (
             self.inventory_id, self.beer_code, self.user_id, self.inventory)
+
+
+
+class ISO(db.Model):
+    """Wish list of individual beers by a user. The In Search Of aka ISO table."""
+
+    __tablename__ = "iso"
+
+
+    iso_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    beer_code = db.Column(db.String(10), db.ForeignKey('beers.beer_code'), index=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), index=True)
+    quantity = db.Column(db.Integer, nullable=False)
+    active = db.Column(db.Boolean(), nullable=False, default=True)
+    # set default to true and change to false after a trade has been completed.
+
+
+    # Define relationship to user
+    user = db.relationship("User",
+                           backref=db.backref("iso", order_by=iso_id))
+
+    # Define relationship to beer
+    beer = db.relationship("Beer",
+                            backref=db.backref("iso", order_by=iso_id))
+
+
+
+    def __repr__(self):
+        """Provide helpful representation when printed."""
+
+        return "<ISO iso_id=%s beer_code=%s user_id=%s quantity=%s>" % (
+            self.iso_id, self.beer_code, self.user_id, self.quantity)
+
+
+
+
+class Trade(db.Model):
+    """Trade list of individual beer trade by two users."""
+
+    __tablename__ = "trades"
+
+
+    trade_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    traded_at = db.Column(db.DateTime, nullable=False)
+    quantity = db.Column(db.Integer, nullable=False)
+    inventory_id = db.Column(db.Integer, db.ForeignKey('inventories.inventory_id'), index=True)
+    iso_id = db.Column(db.Integer, db.ForeignKey('iso.iso_id'), index=True)
+
+
+# REMEMBER to set the iso to false after a trade has been made
+
+
+
+
+    def __repr__(self):
+        """Provide helpful representation when printed."""
+
+        return "<Trade trade_id=%s beer_code=%s user_id=%s quantity=%s>" % (
+            self.trade_id, self.beer_code, self.user_id, self.quantity)
 
 
 ##############################################################################
