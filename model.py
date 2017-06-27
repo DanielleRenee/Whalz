@@ -1,4 +1,4 @@
-"""Models and database functions for Ratings project."""
+"""Models and database functions for Whalz beer trading app."""
 from flask_sqlalchemy import SQLAlchemy
 import correlation
 from collections import defaultdict
@@ -98,6 +98,7 @@ class ISO(db.Model):
     quantity = db.Column(db.Integer, nullable=False)
     active = db.Column(db.Boolean(), nullable=False, default=True)
     # set default to true and change to false after a trade has been completed.
+    # https://pythonhosted.org/Flask-User/data_models.html
 
 
     # Define relationship to user
@@ -130,9 +131,16 @@ class Trade(db.Model):
     quantity = db.Column(db.Integer, nullable=False)
     inventory_id = db.Column(db.Integer, db.ForeignKey('inventories.inventory_id'), index=True)
     iso_id = db.Column(db.Integer, db.ForeignKey('iso.iso_id'), index=True)
+    # REMEMBER to set the iso to false after a trade has been made
 
 
-# REMEMBER to set the iso to false after a trade has been made
+    # Define relationship to inventory
+    inventory = db.relationship("Inventory",
+                           backref=db.backref("trade", order_by=trade_id))
+
+    # Define relationship to iso
+    iso = db.relationship("ISO",
+                            backref=db.backref("trade", order_by=trade_id))
 
 
 
@@ -140,8 +148,8 @@ class Trade(db.Model):
     def __repr__(self):
         """Provide helpful representation when printed."""
 
-        return "<Trade trade_id=%s beer_code=%s user_id=%s quantity=%s>" % (
-            self.trade_id, self.beer_code, self.user_id, self.quantity)
+        return "<Trade trade_id=%s inventory_id=%s iso_id=%s quantity=%s>" % (
+            self.trade_id, self.inventory_id, self.iso_id, self.quantity)
 
 
 ##############################################################################
@@ -151,7 +159,7 @@ def connect_to_db(app):
     """Connect the database to our Flask app."""
 
     # Configure to use our PostgreSQL database
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///ratings'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///whalz'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SQLALCHEMY_ECHO'] = True
     db.app = app
