@@ -1,7 +1,7 @@
 """Models and database functions for Whalz beer trading app."""
 from flask_sqlalchemy import SQLAlchemy
-import correlation
-from collections import defaultdict
+# import correlation
+# from collections import defaultdict
 
 # This is the connection to the PostgreSQL database; we're getting this through
 # the Flask-SQLAlchemy helper library. On this, we can find the `session`
@@ -37,15 +37,15 @@ class Beer(db.Model):
 
     beer_code = db.Column(db.String(10), primary_key=True)
     name = db.Column(db.String(100), nullable=False)
-    website = db.Column(db.String(200), nullable=True)
+    # website = db.Column(db.String(200), nullable=True)
     style_id = db.Column(db.Integer, nullable=True)
     year = db.Column(db.Integer, nullable=True)
-    abv = db.Column(db.Integer, nullable=True)
-    description = db.Column(db.Text, nullable=True)
+    abv = db.Column(db.Float, nullable=True)
+    # description = db.Column(db.Text, nullable=True)
     beer_variation = db.Column(db.String(100), nullable=True)
     beer_variation_id = db.Column(db.String(100), nullable=True)
-    ibu = db.Column(db.Integer, nullable=True)
-    labels = db.Column(db.String(1000), nullable=True)
+    ibu = db.Column(db.Float, nullable=True)
+    # labels = db.Column(db.String(1000), nullable=True)
 
 
     def __repr__(self):
@@ -99,6 +99,9 @@ class ISO(db.Model):
     active = db.Column(db.Boolean(), nullable=False, default=True)
     # set default to true and change to false after a trade has been completed.
     # https://pythonhosted.org/Flask-User/data_models.html
+    # unique pairing between a user and a beer
+    # unqiue key constraint that works on two columns
+    # combo of the beer_code and user should be unique 
 
 
     # Define relationship to user
@@ -132,6 +135,7 @@ class Trade(db.Model):
     inventory_id = db.Column(db.Integer, db.ForeignKey('inventories.inventory_id'), index=True)
     iso_id = db.Column(db.Integer, db.ForeignKey('iso.iso_id'), index=True)
     # REMEMBER to set the iso to false after a trade has been made
+    # If if remove the iso after a trade is complete
 
 
     # Define relationship to inventory
