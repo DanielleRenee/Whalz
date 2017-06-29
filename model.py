@@ -1,5 +1,9 @@
 """Models and database functions for Whalz beer trading app."""
 from flask_sqlalchemy import SQLAlchemy
+# from sqlalchemy_utils import IntRangeType
+from random import randint
+from datetime import datetime
+
 # import correlation
 # from collections import defaultdict
 
@@ -62,12 +66,15 @@ class Inventory(db.Model):
 
     __tablename__ = "inventories"
 
+    inventory_number = randint(1, 12)
+
 
     inventory_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     beer_code = db.Column(db.String(10), db.ForeignKey('beers.beer_code'), index=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), index=True)
-    quantity = db.Column(db.Integer, nullable=False)
-
+    # quantity = db.Column(db.Integer, nullable=False)
+    quantity = db.Column(db.Integer, default=inventory_number)
+   
 
     # Define relationship to user
     user = db.relationship("User",
@@ -96,7 +103,7 @@ class ISO(db.Model):
     iso_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     beer_code = db.Column(db.String(10), db.ForeignKey('beers.beer_code'), index=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), index=True)
-    quantity = db.Column(db.Integer, nullable=False)
+    quantity = db.Column(db.Integer, default=1)
     active = db.Column(db.Boolean(), nullable=False, default=True)
     # set default to true and change to false after a trade has been completed.
     # https://pythonhosted.org/Flask-User/data_models.html
@@ -131,7 +138,7 @@ class Trade(db.Model):
 
 
     trade_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    traded_at = db.Column(db.DateTime, nullable=False)
+    traded_at = db.Column(db.DateTime, default=datetime.utcnow)
     quantity = db.Column(db.Integer, nullable=False)
     inventory_id = db.Column(db.Integer, db.ForeignKey('inventories.inventory_id'), index=True)
     iso_id = db.Column(db.Integer, db.ForeignKey('iso.iso_id'), index=True)

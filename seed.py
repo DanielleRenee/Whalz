@@ -2,9 +2,8 @@
 
 """Utility file to seed Whalz database from Brewery DB and Faker data in seed_data/"""
 
-
-import datetime
 from sqlalchemy import func
+import random
 
 from model import User, Beer, Inventory, ISO, Trade, connect_to_db, db
 from server import app
@@ -93,23 +92,58 @@ def load_inventories():
 
     print "Inventories are filling up. Waiting in 1PP lines really pays off."
 
+    for i in range(0, 20):
+    #create 20 random inventory items
+        beer_code_list = ["4Vmwih", "oQR5YM", "Qg6dpg", "9wNKio", "0DVz81", "YP4dCI", "Eyr9Kg", "jT5vQ0", "4Vmwih", "kQ42vv"]
+        user_id = random.randint(1, 100)
+        beer_code = random.choice(beer_code_list)
 
-    inventories = mixer.blend(Inventory, user=user, beer=beer)
+        # inventories = mixer.cycle(100).blend(Inventory, user=user, beer=beer)
+        inventories = Inventory(beer_code=beer_code, user_id=user_id)
+        # inventories = mixer.blend(Inventory, user=user, beer=beer)
 
-    random_inventories = mixer.cycle(100).blend(Inventory, user_id=mixer.SELECT, beer_code=mixer.SELECT)
+        db.session.add(inventories)
+        db.session.commit()
 
-    db.session.add(random_inventories)
 
-    # Once we're done, we should commit our work
-    db.session.commit()
+
+def load_isos():
+
+    """Load small sample of isos into database."""
+
+    print "Fear of missing out is real. ISOs are being generated."
+
+    for i in range(0, 20):
+    #create 20 random inventory items
+        beer_code_list = ["4Vmwih", "oQR5YM", "Qg6dpg", "9wNKio", "0DVz81", "YP4dCI", "Eyr9Kg", "jT5vQ0", "4Vmwih", "kQ42vv"]
+        user_id = random.randint(1, 100)
+        beer_code = random.choice(beer_code_list)
+
+        iso = ISO(beer_code=beer_code, user_id=user_id)
+        # inventories = mixer.cycle(100).blend(Inventory, user=user, beer=beer)
+        # inventories = mixer.blend(Inventory, user=user, beer=beer)
+
+        db.session.add(iso)
+        db.session.commit()
+
+
+
 
 if __name__ == "__main__":
     connect_to_db(app)
-    # db.create_all()
-
-    # load_beer()
-    # load_users()
-    # load_movies()
+    db.create_all()
+    load_beer()
+    load_users()
+    # load_inventories()
+    # load_isos()
     # load_ratings()
     # set_val_user_id()
+
+
+
+
+neato = ISO(beer_code="AIoIJs", user_id=3)
+
+db.session.add(neato)
+db.session.commit()
 
