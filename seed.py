@@ -61,12 +61,54 @@ def load_beer():
     db.session.commit()
 
 
+def load_users():
+    """Load users from easy fake data generated into database."""
+
+    print "All of your great fake users are being loaded"
+
+    for i, row in enumerate(open("seed_data/fake_data.csv")):
+        row = row.rstrip()
+        name, email, password = row.split(",")
+
+        user = User(name=name,
+                    email=email,
+                    password=password)
+
+        # Skipping the address import for now, may want to add it later. 
+        # We need to add to the session or it won't ever be stored
+        db.session.add(user)
+
+
+    # Once we're done, we should commit our work
+    db.session.commit()
+
+
+
+
+def load_inventories():
+    from mixer.backend.flask import mixer
+    mixer.init_app(app)
+
+    """Load inventories created from Mixer into database."""
+
+    print "Inventories are filling up. Waiting in 1PP lines really pays off."
+
+
+    inventories = mixer.blend(Inventory, user=user, beer=beer)
+
+    random_inventories = mixer.cycle(100).blend(Inventory, user_id=mixer.SELECT, beer_code=mixer.SELECT)
+
+    db.session.add(random_inventories)
+
+    # Once we're done, we should commit our work
+    db.session.commit()
 
 if __name__ == "__main__":
     connect_to_db(app)
-    db.create_all()
+    # db.create_all()
 
-    load_beer()
+    # load_beer()
+    # load_users()
     # load_movies()
     # load_ratings()
     # set_val_user_id()
