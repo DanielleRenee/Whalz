@@ -40,58 +40,58 @@ def user_list():
 
 
 
-@app.route('/dashboard')
-def fresh_off_the_boat():
-        """Show the freshest ipas hitting right now."""
+# @app.route('/dashboard')
+# def fresh_off_the_boat():
+#         """Show the freshest ipas hitting right now."""
 
-        # need to find IPA beer_style_code
-
-
-    APIKEY = '9726819debab5cfdba5b6744dbbf1616'
-    # APIKEY =os.environ['API_KEY']
-    # payload = {'withBreweries': 'Y', 'withIngredients': 'Y', 'p': i}
-    payload = {'p': i}
-
-    response = requests.get('http://api.brewerydb.com/v2/beers?key='+APIKEY, params=payload)
+#         # need to find IPA beer_style_code
 
 
+#     APIKEY = '9726819debab5cfdba5b6744dbbf1616'
+#     # APIKEY =os.environ['API_KEY']
+#     # payload = {'withBreweries': 'Y', 'withIngredients': 'Y', 'p': i}
+#     payload = {'p': i}
 
-def whalz_watch():
-    """Display a featured beer and brewery. Spotlight feature."""
-
-
-    http://api.brewerydb.com/v2/featured?key=9726819debab5cfdba5b6744dbbf1616
+#     response = requests.get('http://api.brewerydb.com/v2/beers?key='+APIKEY, params=payload)
 
 
 
-def newbies():
-    """Display new unique beers added to the database this week."""
-
-    http://api.brewerydb.com/v2/changes?key=9726819debab5cfdba5b6744dbbf1616&attributeName=beer&attributeID=name&action=insert&since=1498694400
+# def whalz_watch():
+#     """Display a featured beer and brewery. Spotlight feature."""
 
 
+#     http://api.brewerydb.com/v2/featured?key=9726819debab5cfdba5b6744dbbf1616
 
 
-def get_out_there():
-    """List upcoming beer trade oppoprtunitues."""
 
-       http://api.brewerydb.com/v2/events?key=9726819debab5cfdba5b6744dbbf1616
+# def newbies():
+#     """Display new unique beers added to the database this week."""
+
+#     http://api.brewerydb.com/v2/changes?key=9726819debab5cfdba5b6744dbbf1616&attributeName=beer&attributeID=name&action=insert&since=1498694400
 
 
 
 
-def real_whalz():
-    """Display opportunity to trade for one of the rarest beers. Less than 5 qty across the whole database."""
+# def get_out_there():
+#     """List upcoming beer trade oppoprtunitues."""
 
-    #this will come from internal db
-
-
+#        http://api.brewerydb.com/v2/events?key=9726819debab5cfdba5b6744dbbf1616
 
 
-def trades_in_numbers():
-    """Display hot comodities. Beers that are trading at very high rates."""
 
-    #this will come from internal db
+
+# def real_whalz():
+#     """Display opportunity to trade for one of the rarest beers. Less than 5 qty across the whole database."""
+
+#     #this will come from internal db
+
+
+
+
+# def trades_in_numbers():
+#     """Display hot comodities. Beers that are trading at very high rates."""
+
+#     #this will come from internal db
 
 
 
@@ -106,6 +106,6 @@ if __name__ == "__main__":
     connect_to_db(app)
 
     # Use the DebugToolbar
-    DebugToolbarExtension(app)
+    # DebugToolbarExtension(app)
 
     app.run(host="0.0.0.0")
