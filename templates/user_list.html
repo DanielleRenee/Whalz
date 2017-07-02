@@ -11,9 +11,20 @@
 <body>
 
 <div class="container">
-<div class="col-md-9">
-    <h3>Members</h3>
-    <ul>
+<div class="col-lg-4 mb-5">
+  <div class="list-group mb-3">
+    <h6 class="list-group-header">
+                Members
+              </h6>
+  {% for user in users %}
+  <a class="list-group-item list-group-item-action justify-content-between" href="#">
+    <span>{{ user.user_id }}</span>
+    <span class="ftext-muted">{{ user.email }}</span>
+  </a>
+  {% endfor %}
+  </div>
+</div>
+ <!--    <ul>
       {% for user in users %}
           <li>
               <a href="/users/{{ user.user_id }}">
@@ -21,7 +32,7 @@
               </a>
           </li>
       {% endfor %}
-    </ul>
+    </ul> -->
 </div>
    <!-- Latest compiled and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
