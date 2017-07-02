@@ -40,6 +40,16 @@ def user_list():
 
 
 
+@app.route('/trade')
+def trade_list():
+    """Show list of trades."""
+
+    trades = Trade.query.all()
+    return render_template("trade_details.html", trades=trades)
+
+
+
+
 # @app.route('/dashboard')
 # def fresh_off_the_boat():
 #         """Show the freshest ipas hitting right now."""

@@ -7,6 +7,7 @@
     <title>Whalz WIP</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="static/dist/toolkit-light.css">
+    <link rel="stylesheet" href="static/dist/application.css">
 
     <style>
         html {
@@ -20,17 +21,27 @@
 
 </head>
 <body>
-    <div class="statcard p-3">
-      <style>
-        body {
-        background-color: transparent;
-      }
-    </style>
 
-      <h3 class="statcard-number">Whalz</h3>
-      <span class="statcard-desc">ISO for life</span>
-    </div>
-            <ul class="nav nav-pills">
+  <div>
+  </div>
+
+    <div class="statcard p-3 text-xs-center">
+          <style>
+            body {
+            background-color: transparent;
+          }
+        </style>
+          <h3 class="statcard-number">Whalz</h3>
+          <span class="statcard-desc">ISO for life</span>
+      </div>
+
+      <div>
+          <ul class="nav nav-pills list-inline">
+              <style>
+              .list-inline {
+              justify-content: center;
+            }
+              </style>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span class="icon icon-gauge"></span>
@@ -44,10 +55,13 @@
                 </a>
               </li>
             </ul>
+        </div>
+
     <!-- Latest compiled and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Link to my JavaScript -->
     <script src="static/dist/toolkit.js"></script>
+    <script src="static/dist/application.js"></script>
 
 </body>
 </html>
