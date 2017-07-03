@@ -127,8 +127,18 @@ def load_isos():
 
 
 
+def load_possible_trades():
+
+    """Search database for matches in ISO and Inventory tables."""
+
+    print "Think of all time your saving!"
 
 
+    INSERT INTO possible_trades (inventory_id, iso_id)
+    SELECT inventory_id, iso_id
+    FROM inventories
+    JOIN iso
+    USING (beer_code);
 
 
 
@@ -139,6 +149,5 @@ if __name__ == "__main__":
     load_users()
     load_inventories()
     load_isos()
-    # load_ratings()
-    # set_val_user_id()
+    # load_possible_trades()
 
