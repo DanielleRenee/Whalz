@@ -127,95 +127,6 @@ def load_isos():
 
 
 
-def search_for_trades():
-
-    """Search database for matches in ISO and Inventory tables."""
-
-    print "Think of all time your saving!"
-
-
-    # first search for a trade at all. 
-
-    # this find all inventories that match up with an iso:
-CREATE VIEW as possible_trades AS
-SELECT beer_code, inventory_id, iso_id
-FROM inventories
-JOIN iso
-USING (beer_code);
-
-trade_possibilites = db.session.query(
-                                      Inventory.inventory_id, 
-                                      Inventory.beer_code, 
-                                      ISO.iso_id, 
-                                      ISO.beer_code).join(ISO).using(beer_code)
-
-    # from this i can facilitate a trade one way.
-
-    take the dictionary 
-
-
-    # then search for a trader either within a close proximty, with the most matches, with the highest rating...
-
-    # update iso to active to be false 
-    # update the inventory_id.qty to be minus the trade qty
-
-
-    # db.session.add(trade)
-    # db.session.commit()
-
-for row in query:
-    HAVE TO FIND MATCHES BOTH WAYS 
-    if inventory_id different than iso_id:
-        that means we have a match one way 
-        inventory_id_one = inventory_id
-        iso_id_one = iso_id
-        so now we check the other way
-
-
-        k = inventory_id
-        v = iso_id
-        21, 23
-        17, 20
-        5, 16
-        15, 6
-        1, 3
-        18, 7
-        19, 5
-        22, 9
-        16, 22
-        11, 18
-        7, 17
-        24, 13
-        9, 11
-        24, 8
-        4, 1
-
-
-
-    trade = ISO(iso_id=iso_id, inventory_id=inventory_id, quantity=1)
-    db.session.add(trade)
-    db.commit()
-
-    # first search for a trade at all. 
-
-    # this find all inventories that match up with an iso:
-    # SELECT beer_code, inventory_id, iso_id
-    # FROM inventories
-    # JOIN iso
-    # USING (beer_code);
-
-    # from this i can facilitate a trade 
-
-
-    # then search for a trader either within a close proximty, with the most matches, with the highest rating...
-
-    # update iso to active to be false 
-    # update the inventory_id.qty to be minus the trade qty 
-
-    # db.session.add(trade)
-    # db.session.commit()
-
-
 
 
 
@@ -223,11 +134,11 @@ for row in query:
 
 if __name__ == "__main__":
     connect_to_db(app)
-    # db.create_all()
-    # load_beer()
-    # load_users()
-    # load_inventories()
-    # load_isos()
+    db.create_all()
+    load_beer()
+    load_users()
+    load_inventories()
+    load_isos()
     # load_ratings()
     # set_val_user_id()
 

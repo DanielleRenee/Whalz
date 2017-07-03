@@ -157,11 +157,29 @@ class Trade(db.Model):
 
 
 
-    def __repr__(self):
-        """Provide helpful representation when printed."""
+class ViewPossibleTrade(db.Model):
+    """List of possible trades."""
 
-        return "<Trade trade_id=%s inventory_id=%s iso_id=%s quantity=%s>" % (
-            self.trade_id, self.inventory_id, self.iso_id, self.quantity)
+    __tablename__ = "possible_trades"
+
+    possible_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    # beer_name = db.Column(db.String(10), db.ForeignKey('inventories.beer.name'), index=True)
+    inventory_id = db.Column(db.Integer, db.ForeignKey('inventories.inventory_id'), index=True)
+    iso_id = db.Column(db.Integer, db.ForeignKey('iso.iso_id'), index=True)
+
+
+    # Define relationship to beer_name
+    # beer_name = db.relationship("Inventory",
+    #                        backref=db.backref("ViewPossibleTrade", order_by=possible_id))
+
+    # Define relationship to inventory
+    inventory = db.relationship("Inventory",
+                           backref=db.backref("ViewPossibleTrade", order_by=possible_id))
+
+    # Define relationship to iso
+    iso = db.relationship("ISO",
+                            backref=db.backref("ViewPossibleTrade", order_by=possible_id))
+
 
 
 ##############################################################################
