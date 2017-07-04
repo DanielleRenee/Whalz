@@ -142,6 +142,18 @@ def load_possible_trades():
 
 
 
+
+def load_trades():
+
+    """Complete trade."""
+
+    trade = Trade(inventory_id=inventory_id, iso_id=iso_id, quantity=quantity)
+
+    db.session.add(trade)
+    db.session.commit()
+
+
+
 if __name__ == "__main__":
     connect_to_db(app)
     db.create_all()

@@ -146,6 +146,11 @@ class Trade(db.Model):
     # If if remove the iso after a trade is complete
 
 
+    possible_trade_id_one =  
+    possible_trade_id_two = 
+
+
+
     # Define relationship to inventory
     inventory = db.relationship("Inventory",
                            backref=db.backref("trade", order_by=trade_id))
