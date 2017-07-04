@@ -79,7 +79,10 @@ def trade_list():
 
 
 
-    return render_template("trade_details.html", trades=trades, 
+    return render_template("trade_details.html", trades=trades,
+                                                 important_values=important_values,
+                                                 real_first=real_first,
+                                                 real_second=real_second,
                                                  beer_one=beer_one, 
                                                  beer_two=beer_two, 
                                                  user_one=user_one, 
@@ -103,11 +106,23 @@ def trade_list():
 
 
 
-# def whalz_watch():
-#     """Display a featured beer and brewery. Spotlight feature."""
+def whalz_watch():
+    """Display a featured beer and brewery. Spotlight feature."""
 
 
-#     http://api.brewerydb.com/v2/featured?key=9726819debab5cfdba5b6744dbbf1616
+    r = requests.get("http://api.brewerydb.com/v2/featured?key=9726819debab5cfdba5b6744dbbf1616")
+
+    latest_feature = r.json()
+
+
+    beer_name = latest_feature['data']['beer'].get('name')
+    beer_id = latest_feature['data']['beer'].get('id')
+    description = latest_feature['data']['beer'].get('description')
+    abv = latest_feature['data']['beer'].get('abv')
+
+    style_id = latest_feature['data']['beer']['style'].get('id')
+    style_name = latest_feature['data']['beer']['style'].get('name')
+    style_description = latest_feature['data']['beer']['style'].get('description')
 
 
 
