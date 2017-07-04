@@ -183,19 +183,7 @@ def search_for_trades():
 #     db.session.add(trade)
       
 
-      # before committing set the iso_id to false 
-
-      # successful_match_one = db.session.query(ISO).get(4)
-      # successful_match_one = db.session.query(ISO).get(22)
-
-      
-      # successful_match_one.active = "False"
-      # successful_match_two.active = "False"
-
- 
-      # person1 = successful_match_one.user.user_id
-      # have the user_id and now want to add a beer to their inventory
-
+qw
 
 
 

@@ -45,6 +45,43 @@ def trade_list():
     """Show list of trades."""
 
     trades = Trade.query.all()
+
+    success_list = []
+    for trade in trades:
+        success_list.append(trade)
+
+
+    important_values = []
+
+    for i in range(len(success_list)):
+
+        initial = success_list[i].initial_trade
+        reciprocate = success_list[i].reciprocal_trade
+
+        important_values.append([initial, reciprocate])
+
+
+        print "Initial: {}, Reciprocate: {}".format(initial, reciprocate)
+        
+
+
+    for i in range(len(important_values)):
+        first = important_values[i][0]
+        second = important_values[i][1]
+        real_first = db.session.query(ViewPossibleTrade).get(first)
+        real_second = db.session.query(ViewPossibleTrade).get(second)
+        Beer_One = real_first.inventory.beer.name
+        User_One = real_first.inventory.user.name
+        Beer_Two = real_second.inventory.beer.name
+        User_Two = real_second.inventory.user.name
+
+        print "Beer #1: {}, User #1: {}".format(Beer_One, User_One)
+        print "Beer #2: {}, User #2: {}".format(Beer_Two, User_Two)
+
+
+
+
+
     return render_template("trade_details.html", trades=trades)
 
 
