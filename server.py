@@ -7,7 +7,7 @@ from jinja2 import StrictUndefined
 from flask import Flask, render_template, request, flash, redirect, session
 from flask_debugtoolbar import DebugToolbarExtension
 
-from model import User, Beer, Inventory, ISO, Trade, connect_to_db, db
+from model import User, Beer, Inventory, ISO, Trade, ViewPossibleTrade, connect_to_db, db
 
 
 app = Flask(__name__)
@@ -64,26 +64,26 @@ def trade_list():
         print "Initial: {}, Reciprocate: {}".format(initial, reciprocate)
         
 
-
     for i in range(len(important_values)):
         first = important_values[i][0]
         second = important_values[i][1]
         real_first = db.session.query(ViewPossibleTrade).get(first)
         real_second = db.session.query(ViewPossibleTrade).get(second)
-        Beer_One = real_first.inventory.beer.name
-        User_One = real_first.inventory.user.name
-        Beer_Two = real_second.inventory.beer.name
-        User_Two = real_second.inventory.user.name
+        beer_one = real_first.inventory.beer.name
+        user_one = real_first.inventory.user.name
+        beer_two = real_second.inventory.beer.name
+        user_two = real_second.inventory.user.name
 
-        print "Beer #1: {}, User #1: {}".format(Beer_One, User_One)
-        print "Beer #2: {}, User #2: {}".format(Beer_Two, User_Two)
-
-
+        print "Beer #1: {}, User #1: {}".format(beer_one, user_one)
+        print "Beer #2: {}, User #2: {}".format(beer_two, user_two)
 
 
 
-    return render_template("trade_details.html", trades=trades)
-
+    return render_template("trade_details.html", trades=trades, 
+                                                 beer_one=beer_one, 
+                                                 beer_two=beer_two, 
+                                                 user_one=user_one, 
+                                                 user_two=user_two,)
 
 
 
