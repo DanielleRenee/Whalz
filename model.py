@@ -136,28 +136,34 @@ class Trade(db.Model):
 
     __tablename__ = "trades"
 
+    __table_args__ = ( db.UniqueConstraint('initial_trade', 'reciprocal_trade'), { } )
+
 
     trade_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     traded_at = db.Column(db.DateTime, default=datetime.utcnow)
     quantity = db.Column(db.Integer, nullable=False)
-    inventory_id = db.Column(db.Integer, db.ForeignKey('inventories.inventory_id'), index=True)
-    iso_id = db.Column(db.Integer, db.ForeignKey('iso.iso_id'), index=True)
+
+    initial_trade = db.Column(db.Integer, db.ForeignKey('possible_trades.possible_id'), index=True)
+
+    reciprocal_trade = db.Column(db.Integer, db.ForeignKey('possible_trades.possible_id'), index=True)
+
+
+
+    # inventory_id = db.Column(db.Integer, db.ForeignKey('inventories.inventory_id'), index=True)
+    # iso_id = db.Column(db.Integer, db.ForeignKey('iso.iso_id'), index=True)
+
+
     # REMEMBER to set the iso to false after a trade has been made
     # If if remove the iso after a trade is complete
 
 
-    possible_trade_id_one =  
-    possible_trade_id_two = 
-
-
-
     # Define relationship to inventory
-    inventory = db.relationship("Inventory",
-                           backref=db.backref("trade", order_by=trade_id))
+    # possible = db.relationship("ViewPossibleTrade",
+    #                        backref=db.backref("trade", order_by=trade_id))
 
     # Define relationship to iso
-    iso = db.relationship("ISO",
-                            backref=db.backref("trade", order_by=trade_id))
+    # iso = db.relationship("ISO",
+    #                         backref=db.backref("trade", order_by=trade_id))
 
 
 

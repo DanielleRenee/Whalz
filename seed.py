@@ -127,30 +127,79 @@ def load_isos():
 
 
 
-def load_possible_trades():
+# def load_possible_trades():
 
-    """Search database for matches in ISO and Inventory tables."""
+#     """Search database for matches in ISO and Inventory tables."""
 
-    print "Think of all time your saving!"
-
-
-    INSERT INTO possible_trades (inventory_id, iso_id)
-    SELECT inventory_id, iso_id
-    FROM inventories
-    JOIN iso
-    USING (beer_code);
+#     print "Think of all time your saving!"
 
 
+#     INSERT INTO possible_trades (inventory_id, iso_id)
+#     SELECT inventory_id, iso_id
+#     FROM inventories
+#     JOIN iso
+#     USING (beer_code);
 
 
-def load_trades():
 
-    """Complete trade."""
 
-    trade = Trade(inventory_id=inventory_id, iso_id=iso_id, quantity=quantity)
+def search_for_trades():
 
-    db.session.add(trade)
-    db.session.commit()
+    """create a tuple of every inventory_id, iso_id in possible_trades"""
+
+    possible_list = []
+
+    all_possible = db.session.query(ViewPossibleTrade.inventory_id, ViewPossibleTrade.iso_id).all()
+
+    for each in all_possible:
+        possible_list.append(each)
+
+    # this returns all possible trades in a list, where each possibility is a tuple,
+    # the first index of the tuple is inventory_id and the second is iso_id
+
+    check_the_other_way = [(t[1], t[0]) for t in possible_list]
+
+    # are there any instances of check_the_other_way in all_possible
+
+    other = [i for i, j in zip(all_possible, checked) if i == j]
+    # example: [(7, 7), (15, 15)]
+
+    # could possible use the cmp(all_possible, checked) method
+
+
+    its_a_match = set(all_possible) & set(check_the_other_way)
+    # example: set([(2, 14), (7, 7), (13, 6), (6, 13), (14, 2), (15, 15)])
+
+
+
+    # hard code the results in load_trades
+
+
+# def load_trades():
+
+#     """Complete trade."""
+
+#     trade = Trade(initial_trade=4, reciprocal_trade=22, quantity=1)
+#     db.session.add(trade)
+      
+
+      # before committing set the iso_id to false 
+
+      # successful_match_one = db.session.query(ISO).get(4)
+      # successful_match_one = db.session.query(ISO).get(22)
+
+      
+      # successful_match_one.active = "False"
+      # successful_match_two.active = "False"
+
+ 
+      # person1 = successful_match_one.user.user_id
+      # have the user_id and now want to add a beer to their inventory
+
+
+
+
+#     db.session.commit()
 
 
 
