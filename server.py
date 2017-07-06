@@ -142,7 +142,7 @@ def dash():
             if new_description != None:
                     new_list.append([new_name, new_description, new_brewery_name, abv])
 
-    print new_list
+    # print new_list
 
 
     return render_template("dashboard.html", beer_name=beer_name, 

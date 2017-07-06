@@ -35,11 +35,11 @@
 
 <body>
   <div class="container">
-       /*<!--  <style>
+       <!--  <style>
             body {
             background-color: transparent;
           }
-        </style> -->*/
+        </style> -->
     <div class="row">
       <div class="col-md-3 sidebar">
         <nav class="sidebar-nav">
@@ -159,12 +159,14 @@
         </h2>
         <hr class="statcard-hr mb-0">
       </div>
-      <canvas id="sparkline1" width="378" height="94"
+      {{ style_description }}
+      
+<!--       <canvas id="sparkline1" width="378" height="94"
         class="sparkline"
         data-chart="spark-line"
         data-dataset="[[28,68,41,43,96,45,100]]"
         data-labels="['a','b','c','d','e','f','g']"
-        style="width: 189px; height: 47px;"></canvas>
+        style="width: 189px; height: 47px;"></canvas> -->
     </div>
   </div>
   
@@ -178,29 +180,27 @@
         </h2>
         <hr class="statcard-hr mb-0">
       </div>
-      <canvas>{{ description }}</canvas>
+      <!-- <canvas> -->{{ description }}<!-- </canvas> -->
     </div>
   </div>
 </div>
 
 <hr class="mt-5">
 
-<div class="row">
-  <div class="col-md-6 mb-5">
+<!-- List the newest brews and the breweries who have released them. -->
+
     <div class="list-group mb-3">
       <h6 class="list-group-header">
         Fresh off the boat
       </h6>
       {% for new in new_list %}
         <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: {{ new[3] }}%;"></span>
+          <span class="list-group-progress" style="width: 62.4%;"></span>
           <span>{{ new[0] }}</span>
           <span class="text-muted">{{ new[2] }}</span>
         </a>
       {% endfor %}
       
-      </div>
-    </div>
   </div>
 
   <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
