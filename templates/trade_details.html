@@ -65,12 +65,7 @@
               <li class="nav-item">
                 <a class="nav-link active" href="/trade">Trade history</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link "href="../fluid-light/index.html">Fluid layout</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="../icon-nav-light/index.html">Icon nav</a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#docsModal" data-toggle="modal">
                   Example modal
@@ -120,20 +115,20 @@
     <thead>
       <tr>
         <th><input type="checkbox" class="select-all" id="selectAll"></th>
-        <th>Trade</th>
-        <th>Description</th>
-        <th>Date</th>
-        <th>Comments</th>
+        <th>User one</th>
+        <th>Beer one</th>
+        <th>User two</th>
+        <th>Beer two</th>
       </tr>
     </thead>
     <tbody>
         {% for trade in trade_trade %}
       <tr>
         <td><input type="checkbox" class="select-row"></td>
-        <td><a href="#">#{{ trade[0] }}</a></td>
-        <td>{{ trade[1] }}</td>
-        <td>{{ trade[2] }}</td>
+        <td><a href="#">#{{ trade[1] }}</a></td>
+        <td>{{ trade[0] }}</td>
         <td>{{ trade[3] }}</td>
+        <td>{{ trade[2] }}</td>
       </tr>
         {% endfor %}
     </tbody>
