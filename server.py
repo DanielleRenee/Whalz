@@ -63,8 +63,9 @@ def trade_list():
         important_values.append([initial, reciprocate])
 
 
-        print "Initial: {}, Reciprocate: {}".format(initial, reciprocate)
-        
+        # print "Initial: {}, Reciprocate: {}".format(initial, reciprocate)
+    
+    trade_trade = []
 
     for i in range(len(important_values)):
         first = important_values[i][0]
@@ -76,18 +77,15 @@ def trade_list():
         beer_two = real_second.inventory.beer.name
         user_two = real_second.inventory.user.name
 
-        print "Beer #1: {}, User #1: {}".format(beer_one, user_one)
-        print "Beer #2: {}, User #2: {}".format(beer_two, user_two)
+        # print "Beer #1: {}, User #1: {}".format(beer_one, user_one)
+        # print "Beer #2: {}, User #2: {}".format(beer_two, user_two)
+        trade_trade.append([beer_one, user_one, beer_two, user_two])
 
 
-    return render_template("trade_details.html", trades=trades,
-                                                 important_values=important_values,
-                                                 real_first=real_first,
-                                                 real_second=real_second,
-                                                 beer_one=beer_one, 
-                                                 beer_two=beer_two, 
-                                                 user_one=user_one, 
-                                                 user_two=user_two,)
+    print trade_trade
+
+
+    return render_template("trade_details.html", trade_trade=trade_trade)
 
 
 

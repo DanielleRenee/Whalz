@@ -10,14 +10,13 @@
 
     <title>
       
-        Whalz Dashboard &middot; 
+        Trade history &middot; 
       
     </title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
     <link rel="stylesheet" href="static/dist/toolkit-light.css">
     <link rel="stylesheet" href="static/dist/application.css">
-
 
     <style>
         html {
@@ -29,13 +28,12 @@
       }
     </style>
 
-
   </head>
 
 
 <body>
   <div class="container">
-       <!--  <style>
+  <!--       <style>
             body {
             background-color: transparent;
           }
@@ -62,10 +60,10 @@
             <ul class="nav nav-pills nav-stacked flex-column">
               <li class="nav-header">Dashboards</li>
               <li class="nav-item">
-                <a class="nav-link active" href="../index-light/index.html">Whalz dashboard</a>
+                <a class="nav-link " href="/dashboard">Whalz dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="/trade">Trade history</a>
+                <a class="nav-link active" href="/trade">Trade history</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link "href="../fluid-light/index.html">Fluid layout</a>
@@ -87,7 +85,7 @@
         <div class="dashhead">
   <div class="dashhead-titles">
     <h6 class="dashhead-subtitle">Dashboards</h6>
-    <h2 class="dashhead-title">Whalz dashboard</h2>
+    <h2 class="dashhead-title">Trade history</h2>
   </div>
 
   <div class="btn-toolbar dashhead-toolbar">
@@ -98,109 +96,76 @@
   </div>
 </div>
 
-<hr class="mt-3">
-
-<div class="row text-center mt-5">
-  <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[230, 130]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Returning', 'New']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Traffic</strong>
-    <h4>New vs Returning</h4>
-  </div>
-  <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[330, 30]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Returning', 'New']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Revenue</strong>
-    <h4>New vs Recurring</h4>
-  </div>
-  <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[100, 260]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Referrals', 'Direct']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Traffic</strong>
-    <h4>Direct vs Referrals</h4>
-  </div>
-</div>
-
-<div class="hr-divider mt-5 mb-3">
-  <h3 class="hr-divider-content hr-divider-heading">This week's featured picks</h3>
-</div>
-
-<div class="row statcards">
-  <div class="col-md-6 mb-5">
-    <div class="statcard statcard-success">
-      <div class="p-3">
-        <span class="statcard-desc">Featured style</span>
-        <h2 class="statcard-number">
-          {{ style_name }}
-        </h2>
-        <hr class="statcard-hr mb-0">
-      </div>
-      {{ style_description }}
-
-<!--       <canvas id="sparkline1" width="378" height="94"
-        class="sparkline"
-        data-chart="spark-line"
-        data-dataset="[[28,68,41,43,96,45,100]]"
-        data-labels="['a','b','c','d','e','f','g']"
-        style="width: 189px; height: 47px;"></canvas> -->
+<div class="flextable table-actions">
+  <div class="flextable-item flextable-primary">
+    <div class="btn-toolbar-item input-with-icon">
+      <input type="text" class="form-control input-block" placeholder="Search trades">
+      <span class="icon icon-magnifying-glass"></span>
     </div>
   </div>
-  
-  <div class="col-md-6 mb-5">
-    <div class="statcard statcard-info">
-      <div class="p-3">
-        <span class="statcard-desc">Featured beer</span>
-        <h2 class="statcard-number">
-          {{ beer_name }}
-          <small class="delta-indicator delta-negative">{{ abv }}</small>
-        </h2>
-        <hr class="statcard-hr mb-0">
-      </div>
-      <!-- <canvas> -->{{ description }}<!-- </canvas> -->
+  <div class="flextable-item">
+    <div class="btn-group">
+      <button type="button" class="btn btn-outline-primary">
+        <span class="icon icon-pencil"></span>
+      </button>
+      <button type="button" class="btn btn-outline-primary">
+        <span class="icon icon-erase"></span>
+      </button>
     </div>
   </div>
 </div>
 
-<hr class="mt-5">
+<div class="table-responsive">
+  <table class="table" data-sort="table">
+    <thead>
+      <tr>
+        <th><input type="checkbox" class="select-all" id="selectAll"></th>
+        <th>Trade</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for trade in trade_trade %}
+      <tr>
+        <td><input type="checkbox" class="select-row"></td>
+        <td><a href="#">#{{ trade[0] }}</a></td>
+        <td>{{ trade[1] }}</td>
+        <td>{{ trade[2] }}</td>
+        <td>{{ trade[3] }}</td>
+      </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
 
-<!-- List the newest brews and the breweries who have released them. -->
-
-    <div class="list-group mb-3">
-      <h6 class="list-group-header">
-        Fresh off the boat
-      </h6>
-      {% for new in new_list %}
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
-          <span class="list-group-progress" style="width: 62.4%;"></span>
-          <span>{{ new[0] }}</span>
-          <span class="text-muted">{{ new[2] }}</span>
+<div class="text-center">
+  <nav>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
         </a>
-      {% endfor %}
-      
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+      </div>
+    </div>
   </div>
 
   <div id="docsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -221,6 +186,7 @@
   </div>
 </div>
 
+
    <!-- Latest compiled and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Link to my JavaScript -->
@@ -233,6 +199,7 @@
       // execute/clear BS loaders for docs
       $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
     </script>
-    
+
+
   </body>
 </html>
