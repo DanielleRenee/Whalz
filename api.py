@@ -19,6 +19,8 @@ for i in range(1, 1270):
 
         response = requests.get('http://api.brewerydb.com/v2/beers?key='+APIKEY, params=payload)
 
+        http://api.brewerydb.com/v2/beers?key=9726819debab5cfdba5b6744dbbf1616&order=createDate&sort=DESC
+
 
         print(response.url)
         #print it just for myself to make sure it is the correct url!
