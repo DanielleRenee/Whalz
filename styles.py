@@ -29,11 +29,11 @@ for i in range(len(style['data'])):
 
 import requests
 import json
-
+from collections import defaultdict
 
 brews = []
 
-for i in range(0, 1):
+for i in range(0, 4):
     # if i % 10 == 0:
 
         APIKEY = '9726819debab5cfdba5b6744dbbf1616'
@@ -54,19 +54,7 @@ for i in range(0, 1):
 
 
 
-from collections import defaultdict
 
-
-
-
-
->>> s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
->>> d = defaultdict(list)
->>> for k, v in s:
-...     d[k].append(v)
-...
->>> d.items()
-[('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 
 
 #create a list of tuples with brewey name and 
@@ -98,6 +86,22 @@ for i in x:
 
             style_tuples.append((brewery_name, sty_num))
 
-            
+
+d = defaultdict(list)
+
+for k, v in style_tuples:
+    d[k].append(v)
+
+
+
+
+
+>>> s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+>>> d = defaultdict(list)
+>>> for k, v in s:
+...     d[k].append(v)
+...
+>>> d.items()
+[('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 
     # print new_list
