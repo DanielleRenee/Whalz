@@ -117,7 +117,7 @@ def dash():
 
     new_list = []
 
-    for i in range(0, 20):
+    for i in range(0, 40):
 
         new_name = new_brews['data'][i].get('name')
         beer_id = new_brews['data'][i].get('id')
@@ -151,72 +151,27 @@ def dash():
                                              style_description=style_description, 
                                              new_list=new_list)
 
+
+
+
+# def charts():
+#     """Ideas for Charts.js."""
+# highest secondary market beer price
+
+
+# name, and the price
+
+
+
+
+
 # def whalz_watch():
 #     """Display a featured beer and brewery. Spotlight feature."""
 
 
-#     r = requests.get("http://api.brewerydb.com/v2/featured?key=9726819debab5cfdba5b6744dbbf1616")
-
-#     latest_feature = r.json()
-
-
-#     beer_name = latest_feature['data']['beer'].get('name')
-#     beer_id = latest_feature['data']['beer'].get('id')
-#     description = latest_feature['data']['beer'].get('description')
-#     abv = latest_feature['data']['beer'].get('abv')
-
-#     style_id = latest_feature['data']['beer']['style'].get('id')
-#     style_name = latest_feature['data']['beer']['style'].get('name')
-#     style_description = latest_feature['data']['beer']['style'].get('description')
-
-#     return(beer_name, abv)
-
-#     return render_template("dashboard.html")
-
-
-
 
 # def fresh_off_the_boat():
-#         """Show the freshest ipas hitting right now."""
-
-#         # need to find IPA beer_style_code
-
-
-#     APIKEY = '9726819debab5cfdba5b6744dbbf1616'
-#     # APIKEY =os.environ['API_KEY']
-#     # payload = {'withBreweries': 'Y', 'withIngredients': 'Y', 'p': i}
-#     payload = {'p': i}
-
-#     response = requests.get('http://api.brewerydb.com/v2/beers?key='+APIKEY, params=payload)
-
-
-@app.route('/feature')
-def whalz_watch():
-    """Display a featured beer and brewery. Spotlight feature."""
-
-
-    r = requests.get("http://api.brewerydb.com/v2/featured?key=9726819debab5cfdba5b6744dbbf1616")
-
-    latest_feature = r.json()
-
-
-    beer_name = latest_feature['data']['beer'].get('name')
-    beer_id = latest_feature['data']['beer'].get('id')
-    description = latest_feature['data']['beer'].get('description')
-    abv = latest_feature['data']['beer'].get('abv')
-
-    style_id = latest_feature['data']['beer']['style'].get('id')
-    style_name = latest_feature['data']['beer']['style'].get('name')
-    style_description = latest_feature['data']['beer']['style'].get('description')
-
-    return(beer_name, abv)
-
-
-
-# def newbies():
-#     """Display new unique beers added to the database this week."""
-
-#     http://api.brewerydb.com/v2/changes?key=9726819debab5cfdba5b6744dbbf1616&attributeName=beer&attributeID=name&action=insert&since=1498694400&createDate=2017
+#      """Show the freshest newest hitting right now."""
 
 
 
