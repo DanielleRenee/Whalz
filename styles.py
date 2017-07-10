@@ -26,15 +26,14 @@ for i in range(len(style['data'])):
 # values is a list are all the style id's that a brewery has 
 
 -----------------------------------------------------------------------
-
 import requests
 import json
 from collections import defaultdict
 
 brews = []
 
-for i in range(0, 4):
-    # if i % 10 == 0:
+for i in range(0, 1300):
+    if i % 2 == 0:
 
         APIKEY = '9726819debab5cfdba5b6744dbbf1616'
         # APIKEY =os.environ['API_KEY']
@@ -51,10 +50,6 @@ for i in range(0, 4):
         brew_list = b.json()
 
         brews.append(brew_list)
-
-
-
-
 
 
 #create a list of tuples with brewey name and 
@@ -80,11 +75,13 @@ for i in x:
             #          u'Harpoon Brewery'
 
             sty_num = brews[i]['data'][y].get('styleId')
+
+            beer_name = brews[i]['data'][y].get('name')
            
             # example: sty_num = brews['data'][1].get('styleId')
             #          61
 
-            style_tuples.append((brewery_name, sty_num))
+            style_tuples.append((brewery_name, sty_num, beer_name))
 
 
 d = defaultdict(list)
@@ -92,16 +89,7 @@ d = defaultdict(list)
 for k, v in style_tuples:
     d[k].append(v)
 
+f = open("beerstyles.csv", "w")
+f.write(d)
+f.close()
 
-
-
-
->>> s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
->>> d = defaultdict(list)
->>> for k, v in s:
-...     d[k].append(v)
-...
->>> d.items()
-[('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
-
-    # print new_list
