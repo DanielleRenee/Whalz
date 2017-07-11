@@ -30,11 +30,10 @@ import requests
 import json
 from collections import defaultdict
 
-f = open("beerstyles.json", "w")
 
 brews = []
 
-for i in range(30, 32):
+for i in range(50, 60):
     # if i % 2 == 0:
 
         APIKEY = '9726819debab5cfdba5b6744dbbf1616'
@@ -107,44 +106,10 @@ for i in x:
                 d3['links'].append({'source': brewery_name, 'target': sty_num, "beer": beer_name})
 
 
-#at this stage we have a dictionary with breweries as the keys and the beers they produce as tuples with their style id.
-all_breweries = {}
-
-names = []
-    
-for thing in beer_dict.viewkeys(): 
-    names.append(thing)
-
-for i in range(len(names)):
-    all_breweries[i] = {}
-    all_breweries[i]["name"] = names[i]
 
 
-d3 = {}
-
-d3['nodes'] = [all_breweries]
-d3['links'] = beers
-
-
-
-
-
-
-# d['dict1']['innerkey'] = 'value'
-# d{'dict1': {'innerkey': 'value'}}
-
-# for k, v in beer_dict.items():
-
-#     d3['source'] = beer_dict[k]
-#     d3['target']['beer_name'] = 
-#     d3['target']['style_id'] = 
-
-
-# data = {}
-
-#     data['nodes'] = all_breweries
-#     data['links'] = beers
-
+with open("beerstyles.json", 'wt') as out:
+    res = json.dump(d3, out, sort_keys=True, indent=4, separators=(',', ': '))
 
 
 # nodes: 

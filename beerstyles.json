@@ -1,0 +1,3918 @@
+{
+    "links": [
+        {
+            "beer": "Ambassador Rye Ale",
+            "source": "Mad Fritz",
+            "target": 117
+        },
+        {
+            "beer": "Ambassador's Reserve",
+            "source": "Franklin Brewing Company Ltd.",
+            "target": 14
+        },
+        {
+            "beer": "Ambear Ale",
+            "source": "Boxing Bear Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Ambear Ale",
+            "source": "Boxing Bear Brewing Co.",
+            "target": 55
+        },
+        {
+            "beer": "Amber",
+            "source": "14th Star Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Swamp Cabbage Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Sharktooth Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Brown Street Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Water Street Lake Country",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Legends Brewhouse & Eatery of Green Bay",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Hornsby's Pubdrafts Ltd.",
+            "target": 101
+        },
+        {
+            "beer": "Amber",
+            "source": "Lazy Boy Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Brouwerij Hof ten Dormaal",
+            "target": 72
+        },
+        {
+            "beer": "Amber",
+            "source": "Wonderland Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Water Street Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Dead Armadillo Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Hilliard's Beer",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Courthouse Pub",
+            "target": 101
+        },
+        {
+            "beer": "Amber",
+            "source": "Backcountry Brewery",
+            "target": 81
+        },
+        {
+            "beer": "Amber",
+            "source": "Dageraad Brewing",
+            "target": 62
+        },
+        {
+            "beer": "Amber",
+            "source": "Mammoth Brewing Company",
+            "target": 37
+        },
+        {
+            "beer": "Amber",
+            "source": "Salado Creek Brewing Company",
+            "target": 97
+        },
+        {
+            "beer": "Amber",
+            "source": "Bootlegger's Brewery",
+            "target": 55
+        },
+        {
+            "beer": "Amber",
+            "source": "Emery Pub",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Sarah Hughes Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Brasserie La Caracole",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Bayern Brewing",
+            "target": 81
+        },
+        {
+            "beer": "Amber",
+            "source": "Bad Jimmy's Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Pacific Breach",
+            "target": 119
+        },
+        {
+            "beer": "Amber",
+            "source": "Grand Teton Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Greenshields Brewery and Pub",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Delafield Brewhaus",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "3 Freaks Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Lancaster Brewery",
+            "target": 4
+        },
+        {
+            "beer": "Amber",
+            "source": "Abita Brewing Company",
+            "target": 78
+        },
+        {
+            "beer": "Amber",
+            "source": "Tonewood Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Prime Microbrewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "White Dog Brewing Co.",
+            "target": 22
+        },
+        {
+            "beer": "Amber",
+            "source": "Red Kettle Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Canyon Creek Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "La Jolla Brew House",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Anacortes Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Alley Kat Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Second Street Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "Joshua Huddy's Brew Pub and Grill",
+            "target": 32
+        },
+        {
+            "beer": "Amber",
+            "source": "North High Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Lightning Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Sankt Gallen Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "SunUp Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Vierling Restaurant & Marquette Harbor Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Rohrbach Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Bare Bones Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Bell's Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Port Washington Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Railroad City Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Flathead Lake Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Brew W\u00ebrks Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Pitchers Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Commonwealth Brewing #1",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "West Sixth Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Kirkwood Station Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Spring House Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Peak Organic Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "BAD Brewing Co",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Crow Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Deepwater Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Black Swan Brewpub",
+            "target": null
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Standing Stone Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Blue Pants Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Boulevard Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Napa Smith Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Camba Bavaria",
+            "target": 14
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Boundary Bay Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Ballad Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Banks Barbados Brewery",
+            "target": 36
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Starr Hill Brewery",
+            "target": 22
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "WT Brews",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Jefferson Street Brewery / Waterstone Pizza",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Negev Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Chuckanut Brewery & Kitchen",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Weinkeller Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Carmel Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Palmetto Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Barrel Trolley Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "City Lights Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Oyster Bay Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "BBC Brewing Co., LLC",
+            "target": 55
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Old 690 Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Austin Brothers Beer Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "No-Li Brewhouse",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Dangerous Man Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "I & I Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Ass Clown Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Appleton Beer Factory",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Jarre Creek Ranch Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Strawn Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Thunderhead Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Moccasin Bend Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Mission Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Beer Engineers",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "St. John Brewers",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "New Planet Beer Company",
+            "target": 127
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Eel River Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "City Brewing Company, LLC",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Fifty West Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Tap Room No. 21 Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Rough Draft Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Barley John's Brewpub",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Hinterland Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Taylor's Restaurant and Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Ruhlman Brewery",
+            "target": 108
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Dark Horse Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Naked Dove Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Binghamton Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Fourpure Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Mickey Finn's Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "America's Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "High Desert Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Scuttlebutt Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Empire Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "HeadStrong Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Flying Monkeys Craft Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "San Marcos Brewery & Grill",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Frog Island Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Triumph Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Blind Squirrel",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Remington Watson Smith Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "HonkyTonk Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Ali'i Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Kirkland Signature / Costco Wholesale Corporation",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale",
+            "source": "Mt. Carmel Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale - Dry Hopped with Liberty Hops",
+            "source": "Saint Arnold Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale - Four+ Series",
+            "source": "Uinta Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale Blossom",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale Columbus",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale Huckleberry",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale In The Groves",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale In The Groves",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale In The Willows",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Ale Winter Rye",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Alert",
+            "source": "5 Seasons Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Alt",
+            "source": "Port Huron Brewing Company",
+            "target": 55
+        },
+        {
+            "beer": "Amber Amarillo",
+            "source": "Wiper and True",
+            "target": 32
+        },
+        {
+            "beer": "Amber Apparition",
+            "source": "Henniker Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Beer",
+            "source": "Dock Street Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Blaze",
+            "source": "Blue Blaze Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Daze",
+            "source": "Heavenly Daze Brewery and Grill",
+            "target": 32
+        },
+        {
+            "beer": "Amber Earl",
+            "source": "Fetch Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Bad Frog Brewery Company",
+            "target": 97
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Karl Strauss Brewing Company",
+            "target": 101
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Wolverine State Brewing Company",
+            "target": 80
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Hudepohl Brewing Company",
+            "target": 101
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Big Oyster Brewery",
+            "target": 96
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Randy's Fun Hunters Brewery Restaurant and Banquet Center",
+            "target": 97
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Main Street Brewing",
+            "target": 101
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Hardtail Brewing",
+            "target": 93
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Eddyline Restaurant and Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Bernard Family Brewery",
+            "target": 101
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Pyramid Breweries",
+            "target": 97
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Rockford Brewing Company",
+            "target": 80
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Weston Brewing Company",
+            "target": 93
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "Alamo Beer Company",
+            "target": 80
+        },
+        {
+            "beer": "AMBER LAGER",
+            "source": "High Point Brewing Co, Inc.",
+            "target": 101
+        },
+        {
+            "beer": "Amber Lager",
+            "source": "High Desert Brewing Co.",
+            "target": 101
+        },
+        {
+            "beer": "Amber Light",
+            "source": "Tied House Brewery & Cafe",
+            "target": 32
+        },
+        {
+            "beer": "Amber Light",
+            "source": "Tied House Cafe & Brewery",
+            "target": 97
+        },
+        {
+            "beer": "Amber Lushus",
+            "source": "Birdsview Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Natt",
+            "source": "Next Door Brewing Company",
+            "target": 70
+        },
+        {
+            "beer": "Amber Plus",
+            "source": "Illinois Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Red Ale",
+            "source": "Antigona Cerveza Artesanal",
+            "target": 32
+        },
+        {
+            "beer": "Amber Reign",
+            "source": "Maui Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Road",
+            "source": "Baxter Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Rye",
+            "source": "Cartel Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Rye",
+            "source": "192 Brewing Company",
+            "target": 97
+        },
+        {
+            "beer": "Amber Rye Lager",
+            "source": "Oconomowoc Brewing",
+            "target": 97
+        },
+        {
+            "beer": "Amber Saison",
+            "source": "Hangar 24 Craft Brewery",
+            "target": 72
+        },
+        {
+            "beer": "Amber Salute",
+            "source": "American Sky Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Smashed Face",
+            "source": "Three Floyds Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Steam Style",
+            "source": "Jamesport Brewing Company",
+            "target": 110
+        },
+        {
+            "beer": "Amber Sun Ale",
+            "source": "16 Mile Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Tease Ale",
+            "source": "Schmohz Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Time",
+            "source": "Wild Wolf Brewing Co",
+            "target": 101
+        },
+        {
+            "beer": "Amber Waders of Grain",
+            "source": "Blue Pants Brewery",
+            "target": 101
+        },
+        {
+            "beer": "Amber Waves",
+            "source": "J. Wakefield Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves",
+            "source": "Liberty Steakhouse and Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves",
+            "source": "Voodoo Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves",
+            "source": "Walldorff Brewpub and Bistro",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves",
+            "source": "10 Barrel Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves Ale",
+            "source": "Capitol City Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves of Grain",
+            "source": "10 Barrel Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves Of Grain",
+            "source": "Erie Canal Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves of Grain",
+            "source": "North Country Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "Amber Waves of Wheat",
+            "source": "Fort Street Brewery",
+            "target": 112
+        },
+        {
+            "beer": "Amber Weizen",
+            "source": "Pyramid Breweries",
+            "target": 97
+        },
+        {
+            "beer": "Amber Weizen",
+            "source": "Breakside Brewery",
+            "target": 115
+        },
+        {
+            "beer": "Amber Wheat",
+            "source": "Chelsea Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber You Harlet!",
+            "source": "Idle Hands Craft Ales",
+            "target": 70
+        },
+        {
+            "beer": "Amber's Amber",
+            "source": "Throwback Brewery",
+            "target": 117
+        },
+        {
+            "beer": "Amber-Ella",
+            "source": "Eight Degrees Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amber-Sticke Altbier",
+            "source": "Fox River Brewing Company",
+            "target": 37
+        },
+        {
+            "beer": "AmberCadabra",
+            "source": "Tapistry Brewing",
+            "target": 32
+        },
+        {
+            "beer": "Amberdextrous",
+            "source": "Highway 1 Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amberdextrous",
+            "source": "Quaff Bros",
+            "target": 133
+        },
+        {
+            "beer": "Ambergeddon",
+            "source": "Ale Asylum",
+            "target": 32
+        },
+        {
+            "beer": "amberguity",
+            "source": "Nowhere Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Amberjack ESB",
+            "source": "Front Street Brewery",
+            "target": 5
+        },
+        {
+            "beer": "Amberlamps",
+            "source": "Oak Road Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amberosia",
+            "source": "Nevin's Draft Company",
+            "target": 22
+        },
+        {
+            "beer": "Amber\u2019s Folly Amber Ale",
+            "source": "Blue Heron Brewing Company",
+            "target": 101
+        },
+        {
+            "beer": "Ambidextrous #7",
+            "source": "Left Hand Brewing Company",
+            "target": 60
+        },
+        {
+            "beer": "Ambidextrous Ale #5",
+            "source": "Left Hand Brewing Company",
+            "target": 44
+        },
+        {
+            "beer": "Ambiorix",
+            "source": "Brasserie des G\u00e9ants",
+            "target": 70
+        },
+        {
+            "beer": "Ambition",
+            "source": "Wit's End Brewing Company",
+            "target": null
+        },
+        {
+            "beer": "Ambition",
+            "source": "Grateful Hands Brewing",
+            "target": 12
+        },
+        {
+            "beer": "Ambitious",
+            "source": "Wildwood Brewing",
+            "target": 80
+        },
+        {
+            "beer": "Ambrata",
+            "source": "Birrificio Bacherotti",
+            "target": 25
+        },
+        {
+            "beer": "Ambrata",
+            "source": "Tenute Collesi",
+            "target": 32
+        },
+        {
+            "beer": "Ambr\u00e9e",
+            "source": "Brasserie Moulins d'Ascq",
+            "target": 71
+        },
+        {
+            "beer": "Ambr\u00e9e",
+            "source": "Brasserie Pietra",
+            "target": 101
+        },
+        {
+            "beer": "Ambr\u00e9e",
+            "source": "Jester King Craft Brewery",
+            "target": 57
+        },
+        {
+            "beer": "Ambr\u00e9e",
+            "source": "Brasserie Saint Rieul",
+            "target": 71
+        },
+        {
+            "beer": "Ambree",
+            "source": "The Commons Brewery",
+            "target": 62
+        },
+        {
+            "beer": "Ambree",
+            "source": "Brasserie De L'Abbaye Des Rocs",
+            "target": 64
+        },
+        {
+            "beer": "Ambr\u00e9e Belge",
+            "source": "Broue Pub Brouhaha",
+            "target": 62
+        },
+        {
+            "beer": "Ambrewsia",
+            "source": "Brewmaster Jack",
+            "target": 31
+        },
+        {
+            "beer": "Ambrosia",
+            "source": "Half Acre Beer Company",
+            "target": null
+        },
+        {
+            "beer": "Ambrosia Blonde",
+            "source": "Alexander Keith's",
+            "target": 36
+        },
+        {
+            "beer": "Ambrosia Honey K\u00f6lsch",
+            "source": "Cranker's Brewery",
+            "target": 45
+        },
+        {
+            "beer": "Ambrosia Maibock",
+            "source": "Elysian Brewing Company",
+            "target": 3
+        },
+        {
+            "beer": "Ambush IPA",
+            "source": "The Brewing Lair",
+            "target": 30
+        },
+        {
+            "beer": "Ambush IPA",
+            "source": "Under Cover Ale Works",
+            "target": 30
+        },
+        {
+            "beer": "AmEn! Barleywine",
+            "source": "Cahoots Brewing",
+            "target": 34
+        },
+        {
+            "beer": "Amendment Pale Ale",
+            "source": "21st Amendment Brewery",
+            "target": 25
+        },
+        {
+            "beer": "Ameretto Dreamin",
+            "source": "Old Soul Brewing",
+            "target": 42
+        },
+        {
+            "beer": "America's Finest Amber",
+            "source": "Bay Bridge Brewing",
+            "target": 32
+        },
+        {
+            "beer": "America's Gold",
+            "source": "Franklin Brewing Company Ltd.",
+            "target": 45
+        },
+        {
+            "beer": "AmericAle",
+            "source": "South County Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "American Ale",
+            "source": "Brooklyn Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Ale",
+            "source": "Kinney Creek Brewery",
+            "target": 32
+        },
+        {
+            "beer": "American Ale",
+            "source": "Top Shelf Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Ale",
+            "source": "Scantic River Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Ale",
+            "source": "Thimble Island Brewing Company",
+            "target": 37
+        },
+        {
+            "beer": "American Ale",
+            "source": "HeadStrong Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Ale",
+            "source": "Hairless Hare Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Amber",
+            "source": "Burdick Brewery",
+            "target": 32
+        },
+        {
+            "beer": "American Amber Ale",
+            "source": "Rogue Ales",
+            "target": 32
+        },
+        {
+            "beer": "American Amber Ale",
+            "source": "Rapp Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "American Amber Ale",
+            "source": "Bluebonnet Beer Company",
+            "target": 32
+        },
+        {
+            "beer": "American Barley Wine",
+            "source": "Brouwerij Kees",
+            "target": 34
+        },
+        {
+            "beer": "American Barleywine",
+            "source": "Burgeon Beer Company",
+            "target": 34
+        },
+        {
+            "beer": "American Beauty",
+            "source": "Dogfish Head Craft Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Bitter Ale",
+            "source": "Westbrook Brewing Company",
+            "target": 3
+        },
+        {
+            "beer": "American Black Lager",
+            "source": "War Horse Brewing Company",
+            "target": 103
+        },
+        {
+            "beer": "American Blonde",
+            "source": "Mraz Brewing Company",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde",
+            "source": "Mill & Main Brewing Company",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde",
+            "source": "The Tap Beer Company",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde",
+            "source": "Brewery Creek Brewing",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde",
+            "source": "American Brewing Company",
+            "target": 45
+        },
+        {
+            "beer": "American Blonde Ale",
+            "source": "Sleepy Owl Brewery",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde Ale",
+            "source": "Cahaba Brewing Company",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde Ale",
+            "source": "Aldus Brewing Co.",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde Ale",
+            "source": "The Gem and Keystone",
+            "target": 36
+        },
+        {
+            "beer": "American Blonde Ale",
+            "source": "New English Brewing",
+            "target": 36
+        },
+        {
+            "beer": "American Bold Ale",
+            "source": "Vindication Brewing Co.",
+            "target": 138
+        },
+        {
+            "beer": "American Brett Saison",
+            "source": "Brasserie St. James",
+            "target": 39
+        },
+        {
+            "beer": "American Brown",
+            "source": "Mraz Brewing Company",
+            "target": 37
+        },
+        {
+            "beer": "American Brown",
+            "source": "Civil Life Brewing Company",
+            "target": 37
+        },
+        {
+            "beer": "American Brown",
+            "source": "Reuben's Brews",
+            "target": 37
+        },
+        {
+            "beer": "American Brown Ale",
+            "source": "Bowser Brewing Company",
+            "target": 12
+        },
+        {
+            "beer": "American Brown Ale",
+            "source": "Lone Tree Brewery",
+            "target": 37
+        },
+        {
+            "beer": "American Brown Ale",
+            "source": "Good Nature Farm Brewery",
+            "target": 37
+        },
+        {
+            "beer": "American Brown Ale",
+            "source": "The Beer'd Brewing Co.",
+            "target": 37
+        },
+        {
+            "beer": "American Brown Ale (Can Sessions)",
+            "source": "The Saint Louis Brewery (Schlafly)",
+            "target": 37
+        },
+        {
+            "beer": "American Country",
+            "source": "New Glory Craft Brewery",
+            "target": 72
+        },
+        {
+            "beer": "American Cream Ale",
+            "source": "Govnor's Public House",
+            "target": 97
+        },
+        {
+            "beer": "American Dark Wheat",
+            "source": "Mill & Main Brewing Company",
+            "target": 115
+        },
+        {
+            "beer": "American Darling",
+            "source": "Pretty Things Beer & Ale Project",
+            "target": 138
+        },
+        {
+            "beer": "American Dream",
+            "source": "LTD Brewing Co.",
+            "target": 45
+        },
+        {
+            "beer": "American Dream",
+            "source": "Texas Beer Refinery",
+            "target": 25
+        },
+        {
+            "beer": "American Dream",
+            "source": "Mikkeller",
+            "target": 98
+        },
+        {
+            "beer": "American Dream India Pale Ale",
+            "source": "Rock Bottom Restaurant & Brewery",
+            "target": 30
+        },
+        {
+            "beer": "American ESB",
+            "source": "Court Avenue Brewing",
+            "target": 5
+        },
+        {
+            "beer": "American Exchange Student",
+            "source": "Our Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Expedition",
+            "source": "Heritage Brewing",
+            "target": 112
+        },
+        {
+            "beer": "American Farmhouse Ale",
+            "source": "ShawneeCraft Brewing Company",
+            "target": 72
+        },
+        {
+            "beer": "American Flyer",
+            "source": "Joseph James Brewing Co. Inc.",
+            "target": 93
+        },
+        {
+            "beer": "American Funk",
+            "source": "Captain Lawrence Brewing Company",
+            "target": 30
+        },
+        {
+            "beer": "American Gold",
+            "source": "Schilling Cider",
+            "target": 155
+        },
+        {
+            "beer": "American Graffiti",
+            "source": "Black Bottle Brewery",
+            "target": 39
+        },
+        {
+            "beer": "American Hardcore",
+            "source": "Pig Minds Brewing Co.",
+            "target": 35
+        },
+        {
+            "beer": "American Hefeweizen",
+            "source": "Sequoia Brewing Company",
+            "target": 48
+        },
+        {
+            "beer": "American Hefeweizen",
+            "source": "Iron Spike Brewing Company",
+            "target": 48
+        },
+        {
+            "beer": "American Hero",
+            "source": "Liquid Hero Brewery",
+            "target": 32
+        },
+        {
+            "beer": "American Honey Ginger Wheat Ale",
+            "source": "The Unknown Brewing",
+            "target": 112
+        },
+        {
+            "beer": "American Hopped Cider",
+            "source": "Embark Craft Ciderworks",
+            "target": 149
+        },
+        {
+            "beer": "American I.P.A.",
+            "source": "Wisconsin Brewing Company",
+            "target": 30
+        },
+        {
+            "beer": "American Imperial Stout",
+            "source": "Trinity Brewhouse",
+            "target": 43
+        },
+        {
+            "beer": "American Imperial Stout",
+            "source": "Burgeon Beer Company",
+            "target": 43
+        },
+        {
+            "beer": "American IPA",
+            "source": "Lupum",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Helio Basin Brewing Co",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Kuhnhenn Brewing",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Nighthawk Brewery",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Telegraph Brewing Company",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "The Saint Louis Brewery (Schlafly)",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Liquid Mechanics Brewing Co.",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Bluebonnet Beer Company",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Shipyard Brewing",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "The Saint Louis Brewery (Schlafly)",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Browar Kormoran",
+            "target": 30
+        },
+        {
+            "beer": "American IPA",
+            "source": "Brevard Brewing Co.",
+            "target": 30
+        },
+        {
+            "beer": "American IPA - Farm House Ales Series",
+            "source": "Long Trail Brewing Co",
+            "target": 25
+        },
+        {
+            "beer": "American Kolsch",
+            "source": "Boulevard Brewing Company",
+            "target": 45
+        },
+        {
+            "beer": "American Kolsch Ale",
+            "source": "Abbey Brewing Company, LLC",
+            "target": 45
+        },
+        {
+            "beer": "American Kolsch story",
+            "source": "River Rat Brewery",
+            "target": 45
+        },
+        {
+            "beer": "American Lager",
+            "source": "Big Elm Brewing Company",
+            "target": 93
+        },
+        {
+            "beer": "American Lager",
+            "source": "Main Street Brewing",
+            "target": 93
+        },
+        {
+            "beer": "American Lager",
+            "source": "M.Special Brewing Company",
+            "target": 93
+        },
+        {
+            "beer": "American Lager",
+            "source": "Guns & Oil Brewing Co.",
+            "target": 93
+        },
+        {
+            "beer": "American Lager",
+            "source": "Hilton Head Brewing Co",
+            "target": 93
+        },
+        {
+            "beer": "American Light",
+            "source": "Pittsburgh Brewing Company",
+            "target": 94
+        },
+        {
+            "beer": "American Magic Wheat",
+            "source": "Arbor Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Monastic",
+            "source": "Clown Shoes Beer",
+            "target": 30
+        },
+        {
+            "beer": "American Muscle \u2013 New World Double IPA",
+            "source": "Local Option",
+            "target": 31
+        },
+        {
+            "beer": "American Nightmare",
+            "source": "Cabinet Artisanal Brewhouse",
+            "target": 30
+        },
+        {
+            "beer": "American Obsession",
+            "source": "Left Nut Brewing Co.",
+            "target": 25
+        },
+        {
+            "beer": "American Outlaw Session IPA",
+            "source": "Bad Tom Smith Brewing",
+            "target": 164
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "H\u00f6gan\u00e4s Bryggeri",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Back Road Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Sons of Liberty Aleworks",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Shipyard Brewing",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Dewey Beer Co.",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Bluegrass Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Tustin Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Helio Basin Brewing Co",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Thomas Hooker Brewing",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Monteith's Brewing Co",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Civil Life Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Hearthstone Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Half Full Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Bad Apple Brewhouse",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Tap It Brewing Co",
+            "target": 29
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Erie Ale Works",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "River Dog Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Lexington Brewing Company and Wine House",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Spanish Peaks Brewing",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Southern Barrel Brewing Co.",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Honor Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Sand Creek Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Two Monkeys Brewing Co",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Appleton Beer Factory",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Naukabout Beer Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "BBC Brewing Co., LLC",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Buckeye Lake Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Kelsey Creek Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Horsefly Brewing Co",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Portsmouth Brewing Co",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Ozark Beer Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Stamm Beer",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Goose Island Beer Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Onopa Brewing",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Good Nature Farm Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Knuth Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "High Desert Brewing Co.",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Cole Street Brewery",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Persephone Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Devil's Peak Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Way Beer",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Blind Squirrel",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Isle de Garde Brasserie",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale",
+            "source": "Black Diamond Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Ale (APA)",
+            "source": "Crooked Can Brewing",
+            "target": 25
+        },
+        {
+            "beer": "American Pale Lager",
+            "source": "August Schell Brewing Company",
+            "target": 93
+        },
+        {
+            "beer": "American Pale Wheat Ale",
+            "source": "Urban Growler Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Patriot Harvest Ale",
+            "source": "ThumbCoast Brewing Company",
+            "target": 26
+        },
+        {
+            "beer": "American Pilsner",
+            "source": "Von Jakob Brewery",
+            "target": 98
+        },
+        {
+            "beer": "American Pilsner",
+            "source": "Wild Wolf Brewing Co",
+            "target": 98
+        },
+        {
+            "beer": "American Pilsner",
+            "source": "Grand Canyon Brewing Company",
+            "target": 98
+        },
+        {
+            "beer": "American Pilsner",
+            "source": "White Dog Brewing Co.",
+            "target": 98
+        },
+        {
+            "beer": "American Pilsner",
+            "source": "Murphy's Wagon Wheel",
+            "target": null
+        },
+        {
+            "beer": "American Premium Lager",
+            "source": "Brevard Brewing Co.",
+            "target": 97
+        },
+        {
+            "beer": "American Presidential Stout",
+            "source": "Arizona Wilderness Brewing Company",
+            "target": 43
+        },
+        {
+            "beer": "American Red Ale",
+            "source": "Rock Art Brewery",
+            "target": 32
+        },
+        {
+            "beer": "American Red Ale",
+            "source": "Herkimer Pub & Brewery",
+            "target": 163
+        },
+        {
+            "beer": "American Red Ale",
+            "source": "Pisgah Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "American Red Ale",
+            "source": "Brevard Brewing Co.",
+            "target": 32
+        },
+        {
+            "beer": "American Red Porter",
+            "source": "Black Shirt Brewing Company",
+            "target": 18
+        },
+        {
+            "beer": "American Red Saison",
+            "source": "Black Shirt Brewing Company",
+            "target": 72
+        },
+        {
+            "beer": "American River Pale Ale",
+            "source": "Auburn Alehouse",
+            "target": 25
+        },
+        {
+            "beer": "American Rye",
+            "source": "Reuben's Brews",
+            "target": 117
+        },
+        {
+            "beer": "American Sour Ale",
+            "source": "Natty Greene's Brewing Co.",
+            "target": 40
+        },
+        {
+            "beer": "American Sour Ale",
+            "source": "Natty Greene's Brewing Co.",
+            "target": 40
+        },
+        {
+            "beer": "American Standard Ale",
+            "source": "Tap It Brewing Co",
+            "target": 25
+        },
+        {
+            "beer": "American Stout",
+            "source": "Wild Wolf Brewing Co",
+            "target": 42
+        },
+        {
+            "beer": "American Stout",
+            "source": "Druid City Brewing Company",
+            "target": 42
+        },
+        {
+            "beer": "American Stout",
+            "source": "Bay City Brewing",
+            "target": 42
+        },
+        {
+            "beer": "American Stout",
+            "source": "McFate Brewing Company",
+            "target": 42
+        },
+        {
+            "beer": "American Stout",
+            "source": "Falls City Brewing Company",
+            "target": 42
+        },
+        {
+            "beer": "American Stout 1508",
+            "source": "RAM Restaurant & Brewery",
+            "target": 42
+        },
+        {
+            "beer": "American Stout Project",
+            "source": "Noble Ale Works",
+            "target": 42
+        },
+        {
+            "beer": "American Strong",
+            "source": "Oceanside Ale Works",
+            "target": 14
+        },
+        {
+            "beer": "American Strong Ale",
+            "source": "Whaler's Brewing Company",
+            "target": 14
+        },
+        {
+            "beer": "American Strong Ale",
+            "source": "Seventh Son Brewing Company",
+            "target": 14
+        },
+        {
+            "beer": "American Strong Ale",
+            "source": "Empire Brewing Company",
+            "target": 14
+        },
+        {
+            "beer": "American Style",
+            "source": "Mikkeller",
+            "target": 30
+        },
+        {
+            "beer": "American Style Sour Ale (Cherry) - Scratch #258",
+            "source": "Tr\u00f6egs Brewing Company",
+            "target": 40
+        },
+        {
+            "beer": "American Summer Hoppy Wit",
+            "source": "Oskar Blues Brewery",
+            "target": 65
+        },
+        {
+            "beer": "American Tripel",
+            "source": "Zipline Brewing Co.",
+            "target": 59
+        },
+        {
+            "beer": "American Velvet",
+            "source": "American Sky Brewing Co.",
+            "target": 20
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Carlyle Brewing",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Mad Anthony Brewing",
+            "target": 113
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Crooked Ladder Brewery",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Deschutes Brewery",
+            "target": 113
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Pitchers Brewery",
+            "target": 113
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Bluegrass Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Ponderosa Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Upstream Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Woodman Brewery",
+            "target": 126
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Main Street Brewing",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Four Horsemen Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Strawn Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Third Street Aleworks Restaurant & Brewery",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Falls City Brewing Company",
+            "target": 65
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Lost Duck Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Thunderhead Brewing Company",
+            "target": 97
+        },
+        {
+            "beer": "American Wheat",
+            "source": "Bike Dog Brewing Company",
+            "target": 113
+        },
+        {
+            "beer": "American Wheat (Hefeweizen)",
+            "source": "Pisgah Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat Ale",
+            "source": "Blowing Rock Brewery",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat Ale",
+            "source": "Crow Brewing Company",
+            "target": 113
+        },
+        {
+            "beer": "American Wheat Ale",
+            "source": "Brown's Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat Ale",
+            "source": "Kulshan Brewing Company",
+            "target": 113
+        },
+        {
+            "beer": "American Wheat Hefeweizen",
+            "source": "Squatters Craft Beers",
+            "target": 112
+        },
+        {
+            "beer": "American Wheat Hefeweizen",
+            "source": "Utah Brewers Cooperative",
+            "target": 113
+        },
+        {
+            "beer": "American White",
+            "source": "Station 26 Brewing Co.",
+            "target": 65
+        },
+        {
+            "beer": "American White Ale",
+            "source": "Abigaile Brewery",
+            "target": 65
+        },
+        {
+            "beer": "American Wild",
+            "source": "JDub's Brewing Company",
+            "target": 135
+        },
+        {
+            "beer": "American Wild Ale",
+            "source": "AC Golden Brewing Company",
+            "target": 125
+        },
+        {
+            "beer": "American Wit",
+            "source": "Sons of Liberty Aleworks",
+            "target": 65
+        },
+        {
+            "beer": "American Wit",
+            "source": "3 Nations Brewing Co.",
+            "target": 65
+        },
+        {
+            "beer": "American-Style Amber Lager",
+            "source": "Bluegrass Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "American-Style Brown Ale",
+            "source": "Four Peaks Brewing Company",
+            "target": 37
+        },
+        {
+            "beer": "Americana",
+            "source": "Prairie Artisan Ales",
+            "target": 72
+        },
+        {
+            "beer": "Americana Amber",
+            "source": "Devils Backbone Brewing Company",
+            "target": 32
+        },
+        {
+            "beer": "Americana Golden",
+            "source": "Barley Mow Brewing Company",
+            "target": 36
+        },
+        {
+            "beer": "Americana Lime Ale",
+            "source": "Barley Mow Brewing Company",
+            "target": 61
+        },
+        {
+            "beer": "Americano Stout",
+            "source": "Stone Brewing",
+            "target": 43
+        },
+        {
+            "beer": "Americano Wheat",
+            "source": "Guadalupe Brewing Company",
+            "target": 112
+        },
+        {
+            "beer": "Americus IPA",
+            "source": "Bolo Beer Co.",
+            "target": 30
+        },
+        {
+            "beer": "Amerifest",
+            "source": "Aftershock Brewing Company",
+            "target": 102
+        },
+        {
+            "beer": "Ameritage",
+            "source": "Zeta Brewing Company",
+            "target": 170
+        },
+        {
+            "beer": "Amigo Grande",
+            "source": "Big Wood Brewery",
+            "target": 105
+        },
+        {
+            "beer": "Amigo Lager",
+            "source": "Port Brewing Company",
+            "target": 97
+        },
+        {
+            "beer": "Amigo Warmer",
+            "source": "Hi-Fi Brewing Co.",
+            "target": 122
+        },
+        {
+            "beer": "Amigos Brit\u00e1nicos",
+            "source": "Siren Craft Brew",
+            "target": 72
+        },
+        {
+            "beer": "Amish Four Grain",
+            "source": "Lancaster Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "Amiti\u00e9",
+            "source": "De Dochter van de Korenaar",
+            "target": 30
+        },
+        {
+            "beer": "Amnesia I.P.A.",
+            "source": "Indian Wells Brewing Company",
+            "target": 30
+        },
+        {
+            "beer": "Amnesiac",
+            "source": "Phillips Brewing Company",
+            "target": 31
+        },
+        {
+            "beer": "Amoeba",
+            "source": "Mikkeller",
+            "target": 30
+        },
+        {
+            "beer": "Amohga",
+            "source": "MobCraft Beer",
+            "target": 128
+        },
+        {
+            "beer": "Among the Pines",
+            "source": "Monument City Brewing Company",
+            "target": 31
+        },
+        {
+            "beer": "Amoor",
+            "source": "Moor Beer Company",
+            "target": 18
+        },
+        {
+            "beer": "Amor Amargo",
+            "source": "Tyris",
+            "target": 30
+        },
+        {
+            "beer": "Amorous - Royal Cache Barrel Reserve Series",
+            "source": "Wicked Weed Brewing Company",
+            "target": 136
+        },
+        {
+            "beer": "Amos Moses",
+            "source": "Country Boy Brewing",
+            "target": 37
+        },
+        {
+            "beer": "Amoskeag Harvest Ale",
+            "source": "Milly's Tavern",
+            "target": 36
+        },
+        {
+            "beer": "Amour Fou",
+            "source": "Hopcat",
+            "target": 44
+        },
+        {
+            "beer": "Ampere Amber",
+            "source": "Tin Whiskers Brewing Company",
+            "target": 110
+        },
+        {
+            "beer": "Amphibian Amber",
+            "source": "Little Toad Creek Brewery",
+            "target": 32
+        },
+        {
+            "beer": "Amphora Centvrivm",
+            "source": "Cerveja Amphora",
+            "target": 43
+        },
+        {
+            "beer": "Amputator",
+            "source": "Butcherknife Brewing Company",
+            "target": 25
+        },
+        {
+            "beer": "Amra Mango IPA",
+            "source": "DESTIHL Brewery",
+            "target": 30
+        },
+        {
+            "beer": "Amstel",
+            "source": "Amstel Brewery",
+            "target": 93
+        },
+        {
+            "beer": "Amstel 0.0",
+            "source": "Amstel Brewery",
+            "target": 139
+        },
+        {
+            "beer": "Amstel 1870 Pilsner",
+            "source": "Amstel Brewery",
+            "target": 98
+        },
+        {
+            "beer": "Amstel Blond",
+            "source": "Amstel Brewery",
+            "target": 93
+        },
+        {
+            "beer": "Amstel Bock",
+            "source": "Amstel Brewery",
+            "target": 88
+        },
+        {
+            "beer": "Amstel Bright",
+            "source": "Amstel Brewery",
+            "target": 77
+        },
+        {
+            "beer": "Amstel de Belofte",
+            "source": "Amstel Brewery",
+            "target": 93
+        },
+        {
+            "beer": "Amstel Extra",
+            "source": "Amstel Brewery",
+            "target": 93
+        },
+        {
+            "beer": "Amstel Free",
+            "source": "Amstel Brewery",
+            "target": 139
+        },
+        {
+            "beer": "Amstel Gold",
+            "source": "Amstel Brewery",
+            "target": 27
+        },
+        {
+            "beer": "Amstel Herfstbock",
+            "source": "Amstel Brewery",
+            "target": 89
+        },
+        {
+            "beer": "Amstel Lentebock",
+            "source": "Amstel Brewery",
+            "target": 89
+        },
+        {
+            "beer": "Amstel Light",
+            "source": "Amstel Brewery",
+            "target": 94
+        },
+        {
+            "beer": "Amstel Malt",
+            "source": "Amstel Brewery",
+            "target": 77
+        },
+        {
+            "beer": "Amstel Ongefilterd",
+            "source": "Amstel Brewery",
+            "target": 75
+        },
+        {
+            "beer": "Amstel Oud Bruin",
+            "source": "Amstel Brewery",
+            "target": 94
+        },
+        {
+            "beer": "Amstel Premium Pilsener",
+            "source": "Amstel Brewery",
+            "target": 75
+        },
+        {
+            "beer": "Amstel Pulse",
+            "source": "Amstel Brewery",
+            "target": 97
+        }
+    ],
+    "nodes": [
+        {
+            "name": "Mad Fritz"
+        },
+        {
+            "name": "Franklin Brewing Company Ltd."
+        },
+        {
+            "name": "Boxing Bear Brewing Co."
+        },
+        {
+            "name": "Boxing Bear Brewing Co."
+        },
+        {
+            "name": "14th Star Brewing"
+        },
+        {
+            "name": "Swamp Cabbage Brewing Company"
+        },
+        {
+            "name": "Sharktooth Brewing"
+        },
+        {
+            "name": "Brown Street Brewery"
+        },
+        {
+            "name": "Water Street Lake Country"
+        },
+        {
+            "name": "Legends Brewhouse & Eatery of Green Bay"
+        },
+        {
+            "name": "Hornsby's Pubdrafts Ltd."
+        },
+        {
+            "name": "Lazy Boy Brewing Company"
+        },
+        {
+            "name": "Brouwerij Hof ten Dormaal"
+        },
+        {
+            "name": "Wonderland Brewing Company"
+        },
+        {
+            "name": "Water Street Brewery"
+        },
+        {
+            "name": "Dead Armadillo Brewery"
+        },
+        {
+            "name": "Hilliard's Beer"
+        },
+        {
+            "name": "Courthouse Pub"
+        },
+        {
+            "name": "Backcountry Brewery"
+        },
+        {
+            "name": "Dageraad Brewing"
+        },
+        {
+            "name": "Mammoth Brewing Company"
+        },
+        {
+            "name": "Salado Creek Brewing Company"
+        },
+        {
+            "name": "Bootlegger's Brewery"
+        },
+        {
+            "name": "Emery Pub"
+        },
+        {
+            "name": "Sarah Hughes Brewery"
+        },
+        {
+            "name": "Brasserie La Caracole"
+        },
+        {
+            "name": "Bayern Brewing"
+        },
+        {
+            "name": "Bad Jimmy's Brewery"
+        },
+        {
+            "name": "Pacific Breach"
+        },
+        {
+            "name": "Grand Teton Brewing Company"
+        },
+        {
+            "name": "Greenshields Brewery and Pub"
+        },
+        {
+            "name": "Delafield Brewhaus"
+        },
+        {
+            "name": "3 Freaks Brewery"
+        },
+        {
+            "name": "Lancaster Brewery"
+        },
+        {
+            "name": "Abita Brewing Company"
+        },
+        {
+            "name": "Tonewood Brewing"
+        },
+        {
+            "name": "Prime Microbrewery"
+        },
+        {
+            "name": "White Dog Brewing Co."
+        },
+        {
+            "name": "Red Kettle Brewing"
+        },
+        {
+            "name": "Canyon Creek Brewing"
+        },
+        {
+            "name": "La Jolla Brew House"
+        },
+        {
+            "name": "Anacortes Brewery"
+        },
+        {
+            "name": "Alley Kat Brewing Company"
+        },
+        {
+            "name": "Second Street Brewery"
+        },
+        {
+            "name": "Joshua Huddy's Brew Pub and Grill"
+        },
+        {
+            "name": "North High Brewing"
+        },
+        {
+            "name": "Lightning Brewery"
+        },
+        {
+            "name": "Sankt Gallen Brewery"
+        },
+        {
+            "name": "SunUp Brewing"
+        },
+        {
+            "name": "Vierling Restaurant & Marquette Harbor Brewery"
+        },
+        {
+            "name": "Rohrbach Brewing Company"
+        },
+        {
+            "name": "Bare Bones Brewery"
+        },
+        {
+            "name": "Bell's Brewery"
+        },
+        {
+            "name": "Port Washington Brewing"
+        },
+        {
+            "name": "Railroad City Brewing Company"
+        },
+        {
+            "name": "Flathead Lake Brewing Company"
+        },
+        {
+            "name": "Brew W\u00ebrks Brewing Company"
+        },
+        {
+            "name": "Pitchers Brewery"
+        },
+        {
+            "name": "Commonwealth Brewing #1"
+        },
+        {
+            "name": "West Sixth Brewing"
+        },
+        {
+            "name": "Kirkwood Station Brewing Company"
+        },
+        {
+            "name": "Spring House Brewing Company"
+        },
+        {
+            "name": "Peak Organic Brewing Company"
+        },
+        {
+            "name": "BAD Brewing Co"
+        },
+        {
+            "name": "Crow Brewing Company"
+        },
+        {
+            "name": "Deepwater Brewing Company"
+        },
+        {
+            "name": "Black Swan Brewpub"
+        },
+        {
+            "name": "Standing Stone Brewing Company"
+        },
+        {
+            "name": "Blue Pants Brewery"
+        },
+        {
+            "name": "Boulevard Brewing Company"
+        },
+        {
+            "name": "Napa Smith Brewery"
+        },
+        {
+            "name": "Camba Bavaria"
+        },
+        {
+            "name": "Boundary Bay Brewery"
+        },
+        {
+            "name": "Ballad Brewing"
+        },
+        {
+            "name": "Banks Barbados Brewery"
+        },
+        {
+            "name": "Starr Hill Brewery"
+        },
+        {
+            "name": "WT Brews"
+        },
+        {
+            "name": "Jefferson Street Brewery / Waterstone Pizza"
+        },
+        {
+            "name": "Negev Brewery"
+        },
+        {
+            "name": "Chuckanut Brewery & Kitchen"
+        },
+        {
+            "name": "Weinkeller Brewery"
+        },
+        {
+            "name": "Carmel Brewing"
+        },
+        {
+            "name": "Palmetto Brewing Company"
+        },
+        {
+            "name": "Barrel Trolley Brewing"
+        },
+        {
+            "name": "City Lights Brewing Co."
+        },
+        {
+            "name": "Oyster Bay Brewing Company"
+        },
+        {
+            "name": "BBC Brewing Co., LLC"
+        },
+        {
+            "name": "Old 690 Brewing Company"
+        },
+        {
+            "name": "Austin Brothers Beer Co."
+        },
+        {
+            "name": "No-Li Brewhouse"
+        },
+        {
+            "name": "Dangerous Man Brewing Company"
+        },
+        {
+            "name": "I & I Brewing"
+        },
+        {
+            "name": "Ass Clown Brewing Company"
+        },
+        {
+            "name": "Appleton Beer Factory"
+        },
+        {
+            "name": "Jarre Creek Ranch Brewing"
+        },
+        {
+            "name": "Strawn Brewing Company"
+        },
+        {
+            "name": "Thunderhead Brewing Company"
+        },
+        {
+            "name": "Moccasin Bend Brewing Company"
+        },
+        {
+            "name": "Mission Brewery"
+        },
+        {
+            "name": "Beer Engineers"
+        },
+        {
+            "name": "St. John Brewers"
+        },
+        {
+            "name": "New Planet Beer Company"
+        },
+        {
+            "name": "Eel River Brewing"
+        },
+        {
+            "name": "City Brewing Company, LLC"
+        },
+        {
+            "name": "Fifty West Brewing Company"
+        },
+        {
+            "name": "Tap Room No. 21 Brewing Company"
+        },
+        {
+            "name": "Rough Draft Brewing Company"
+        },
+        {
+            "name": "Barley John's Brewpub"
+        },
+        {
+            "name": "Hinterland Brewery"
+        },
+        {
+            "name": "Taylor's Restaurant and Brewery"
+        },
+        {
+            "name": "Ruhlman Brewery"
+        },
+        {
+            "name": "Dark Horse Brewing Company"
+        },
+        {
+            "name": "Naked Dove Brewing Company"
+        },
+        {
+            "name": "Binghamton Brewing Company"
+        },
+        {
+            "name": "Fourpure Brewing Co."
+        },
+        {
+            "name": "Mickey Finn's Brewery"
+        },
+        {
+            "name": "America's Brewing Company"
+        },
+        {
+            "name": "High Desert Brewing Co."
+        },
+        {
+            "name": "Scuttlebutt Brewing Company"
+        },
+        {
+            "name": "Empire Brewing Company"
+        },
+        {
+            "name": "HeadStrong Brewery"
+        },
+        {
+            "name": "Flying Monkeys Craft Brewery"
+        },
+        {
+            "name": "San Marcos Brewery & Grill"
+        },
+        {
+            "name": "Frog Island Brewery"
+        },
+        {
+            "name": "Triumph Brewing Company"
+        },
+        {
+            "name": "Blind Squirrel"
+        },
+        {
+            "name": "Remington Watson Smith Brewing"
+        },
+        {
+            "name": "HonkyTonk Brewing Co."
+        },
+        {
+            "name": "Ali'i Brewing Company"
+        },
+        {
+            "name": "Kirkland Signature / Costco Wholesale Corporation"
+        },
+        {
+            "name": "Mt. Carmel Brewing Company"
+        },
+        {
+            "name": "Saint Arnold Brewing Company"
+        },
+        {
+            "name": "Uinta Brewing Company"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "5 Seasons Brewing Company"
+        },
+        {
+            "name": "Port Huron Brewing Company"
+        },
+        {
+            "name": "Wiper and True"
+        },
+        {
+            "name": "Henniker Brewing Company"
+        },
+        {
+            "name": "Dock Street Brewery"
+        },
+        {
+            "name": "Blue Blaze Brewing"
+        },
+        {
+            "name": "Heavenly Daze Brewery and Grill"
+        },
+        {
+            "name": "Fetch Brewing"
+        },
+        {
+            "name": "Bad Frog Brewery Company"
+        },
+        {
+            "name": "Karl Strauss Brewing Company"
+        },
+        {
+            "name": "Wolverine State Brewing Company"
+        },
+        {
+            "name": "Hudepohl Brewing Company"
+        },
+        {
+            "name": "Big Oyster Brewery"
+        },
+        {
+            "name": "Randy's Fun Hunters Brewery Restaurant and Banquet Center"
+        },
+        {
+            "name": "Main Street Brewing"
+        },
+        {
+            "name": "Hardtail Brewing"
+        },
+        {
+            "name": "Eddyline Restaurant and Brewing Company"
+        },
+        {
+            "name": "Bernard Family Brewery"
+        },
+        {
+            "name": "Pyramid Breweries"
+        },
+        {
+            "name": "Rockford Brewing Company"
+        },
+        {
+            "name": "Weston Brewing Company"
+        },
+        {
+            "name": "Alamo Beer Company"
+        },
+        {
+            "name": "High Point Brewing Co, Inc."
+        },
+        {
+            "name": "High Desert Brewing Co."
+        },
+        {
+            "name": "Tied House Brewery & Cafe"
+        },
+        {
+            "name": "Tied House Cafe & Brewery"
+        },
+        {
+            "name": "Birdsview Brewing Company"
+        },
+        {
+            "name": "Next Door Brewing Company"
+        },
+        {
+            "name": "Illinois Brewing"
+        },
+        {
+            "name": "Antigona Cerveza Artesanal"
+        },
+        {
+            "name": "Maui Brewing Co."
+        },
+        {
+            "name": "Baxter Brewing Company"
+        },
+        {
+            "name": "Cartel Brewery"
+        },
+        {
+            "name": "192 Brewing Company"
+        },
+        {
+            "name": "Oconomowoc Brewing"
+        },
+        {
+            "name": "Hangar 24 Craft Brewery"
+        },
+        {
+            "name": "American Sky Brewing Co."
+        },
+        {
+            "name": "Three Floyds Brewing Company"
+        },
+        {
+            "name": "Jamesport Brewing Company"
+        },
+        {
+            "name": "16 Mile Brewing Company"
+        },
+        {
+            "name": "Schmohz Brewing Company"
+        },
+        {
+            "name": "Wild Wolf Brewing Co"
+        },
+        {
+            "name": "Blue Pants Brewery"
+        },
+        {
+            "name": "J. Wakefield Brewing"
+        },
+        {
+            "name": "Liberty Steakhouse and Brewery"
+        },
+        {
+            "name": "Voodoo Brewing Company"
+        },
+        {
+            "name": "Walldorff Brewpub and Bistro"
+        },
+        {
+            "name": "10 Barrel Brewing Company"
+        },
+        {
+            "name": "Capitol City Brewing Company"
+        },
+        {
+            "name": "10 Barrel Brewing Company"
+        },
+        {
+            "name": "Erie Canal Brewing Company"
+        },
+        {
+            "name": "North Country Brewing Co."
+        },
+        {
+            "name": "Fort Street Brewery"
+        },
+        {
+            "name": "Pyramid Breweries"
+        },
+        {
+            "name": "Breakside Brewery"
+        },
+        {
+            "name": "Chelsea Brewing Company"
+        },
+        {
+            "name": "Idle Hands Craft Ales"
+        },
+        {
+            "name": "Throwback Brewery"
+        },
+        {
+            "name": "Eight Degrees Brewing Company"
+        },
+        {
+            "name": "Fox River Brewing Company"
+        },
+        {
+            "name": "Tapistry Brewing"
+        },
+        {
+            "name": "Highway 1 Brewing Company"
+        },
+        {
+            "name": "Quaff Bros"
+        },
+        {
+            "name": "Ale Asylum"
+        },
+        {
+            "name": "Nowhere Brewing Company"
+        },
+        {
+            "name": "Front Street Brewery"
+        },
+        {
+            "name": "Oak Road Brewery"
+        },
+        {
+            "name": "Nevin's Draft Company"
+        },
+        {
+            "name": "Blue Heron Brewing Company"
+        },
+        {
+            "name": "Left Hand Brewing Company"
+        },
+        {
+            "name": "Left Hand Brewing Company"
+        },
+        {
+            "name": "Brasserie des G\u00e9ants"
+        },
+        {
+            "name": "Wit's End Brewing Company"
+        },
+        {
+            "name": "Grateful Hands Brewing"
+        },
+        {
+            "name": "Wildwood Brewing"
+        },
+        {
+            "name": "Birrificio Bacherotti"
+        },
+        {
+            "name": "Tenute Collesi"
+        },
+        {
+            "name": "Brasserie Moulins d'Ascq"
+        },
+        {
+            "name": "Brasserie Pietra"
+        },
+        {
+            "name": "Jester King Craft Brewery"
+        },
+        {
+            "name": "Brasserie Saint Rieul"
+        },
+        {
+            "name": "The Commons Brewery"
+        },
+        {
+            "name": "Brasserie De L'Abbaye Des Rocs"
+        },
+        {
+            "name": "Broue Pub Brouhaha"
+        },
+        {
+            "name": "Brewmaster Jack"
+        },
+        {
+            "name": "Half Acre Beer Company"
+        },
+        {
+            "name": "Alexander Keith's"
+        },
+        {
+            "name": "Cranker's Brewery"
+        },
+        {
+            "name": "Elysian Brewing Company"
+        },
+        {
+            "name": "The Brewing Lair"
+        },
+        {
+            "name": "Under Cover Ale Works"
+        },
+        {
+            "name": "Cahoots Brewing"
+        },
+        {
+            "name": "21st Amendment Brewery"
+        },
+        {
+            "name": "Old Soul Brewing"
+        },
+        {
+            "name": "Bay Bridge Brewing"
+        },
+        {
+            "name": "Franklin Brewing Company Ltd."
+        },
+        {
+            "name": "South County Brewing Company"
+        },
+        {
+            "name": "Brooklyn Brewery"
+        },
+        {
+            "name": "Kinney Creek Brewery"
+        },
+        {
+            "name": "Top Shelf Brewery"
+        },
+        {
+            "name": "Scantic River Brewery"
+        },
+        {
+            "name": "Thimble Island Brewing Company"
+        },
+        {
+            "name": "HeadStrong Brewery"
+        },
+        {
+            "name": "Hairless Hare Brewery"
+        },
+        {
+            "name": "Burdick Brewery"
+        },
+        {
+            "name": "Rogue Ales"
+        },
+        {
+            "name": "Rapp Brewing Company"
+        },
+        {
+            "name": "Bluebonnet Beer Company"
+        },
+        {
+            "name": "Brouwerij Kees"
+        },
+        {
+            "name": "Burgeon Beer Company"
+        },
+        {
+            "name": "Dogfish Head Craft Brewery"
+        },
+        {
+            "name": "Westbrook Brewing Company"
+        },
+        {
+            "name": "War Horse Brewing Company"
+        },
+        {
+            "name": "Mraz Brewing Company"
+        },
+        {
+            "name": "Mill & Main Brewing Company"
+        },
+        {
+            "name": "The Tap Beer Company"
+        },
+        {
+            "name": "Brewery Creek Brewing"
+        },
+        {
+            "name": "American Brewing Company"
+        },
+        {
+            "name": "Sleepy Owl Brewery"
+        },
+        {
+            "name": "Cahaba Brewing Company"
+        },
+        {
+            "name": "Aldus Brewing Co."
+        },
+        {
+            "name": "The Gem and Keystone"
+        },
+        {
+            "name": "New English Brewing"
+        },
+        {
+            "name": "Vindication Brewing Co."
+        },
+        {
+            "name": "Brasserie St. James"
+        },
+        {
+            "name": "Mraz Brewing Company"
+        },
+        {
+            "name": "Civil Life Brewing Company"
+        },
+        {
+            "name": "Reuben's Brews"
+        },
+        {
+            "name": "Bowser Brewing Company"
+        },
+        {
+            "name": "Lone Tree Brewery"
+        },
+        {
+            "name": "Good Nature Farm Brewery"
+        },
+        {
+            "name": "The Beer'd Brewing Co."
+        },
+        {
+            "name": "The Saint Louis Brewery (Schlafly)"
+        },
+        {
+            "name": "New Glory Craft Brewery"
+        },
+        {
+            "name": "Govnor's Public House"
+        },
+        {
+            "name": "Mill & Main Brewing Company"
+        },
+        {
+            "name": "Pretty Things Beer & Ale Project"
+        },
+        {
+            "name": "LTD Brewing Co."
+        },
+        {
+            "name": "Texas Beer Refinery"
+        },
+        {
+            "name": "Mikkeller"
+        },
+        {
+            "name": "Rock Bottom Restaurant & Brewery"
+        },
+        {
+            "name": "Court Avenue Brewing"
+        },
+        {
+            "name": "Our Brewing Company"
+        },
+        {
+            "name": "Heritage Brewing"
+        },
+        {
+            "name": "ShawneeCraft Brewing Company"
+        },
+        {
+            "name": "Joseph James Brewing Co. Inc."
+        },
+        {
+            "name": "Captain Lawrence Brewing Company"
+        },
+        {
+            "name": "Schilling Cider"
+        },
+        {
+            "name": "Black Bottle Brewery"
+        },
+        {
+            "name": "Pig Minds Brewing Co."
+        },
+        {
+            "name": "Sequoia Brewing Company"
+        },
+        {
+            "name": "Iron Spike Brewing Company"
+        },
+        {
+            "name": "Liquid Hero Brewery"
+        },
+        {
+            "name": "The Unknown Brewing"
+        },
+        {
+            "name": "Embark Craft Ciderworks"
+        },
+        {
+            "name": "Wisconsin Brewing Company"
+        },
+        {
+            "name": "Trinity Brewhouse"
+        },
+        {
+            "name": "Burgeon Beer Company"
+        },
+        {
+            "name": "Lupum"
+        },
+        {
+            "name": "Helio Basin Brewing Co"
+        },
+        {
+            "name": "Kuhnhenn Brewing"
+        },
+        {
+            "name": "Nighthawk Brewery"
+        },
+        {
+            "name": "Telegraph Brewing Company"
+        },
+        {
+            "name": "The Saint Louis Brewery (Schlafly)"
+        },
+        {
+            "name": "Liquid Mechanics Brewing Co."
+        },
+        {
+            "name": "Bluebonnet Beer Company"
+        },
+        {
+            "name": "Shipyard Brewing"
+        },
+        {
+            "name": "The Saint Louis Brewery (Schlafly)"
+        },
+        {
+            "name": "Browar Kormoran"
+        },
+        {
+            "name": "Brevard Brewing Co."
+        },
+        {
+            "name": "Long Trail Brewing Co"
+        },
+        {
+            "name": "Boulevard Brewing Company"
+        },
+        {
+            "name": "Abbey Brewing Company, LLC"
+        },
+        {
+            "name": "River Rat Brewery"
+        },
+        {
+            "name": "Big Elm Brewing Company"
+        },
+        {
+            "name": "Main Street Brewing"
+        },
+        {
+            "name": "M.Special Brewing Company"
+        },
+        {
+            "name": "Guns & Oil Brewing Co."
+        },
+        {
+            "name": "Hilton Head Brewing Co"
+        },
+        {
+            "name": "Pittsburgh Brewing Company"
+        },
+        {
+            "name": "Arbor Brewing Company"
+        },
+        {
+            "name": "Clown Shoes Beer"
+        },
+        {
+            "name": "Local Option"
+        },
+        {
+            "name": "Cabinet Artisanal Brewhouse"
+        },
+        {
+            "name": "Left Nut Brewing Co."
+        },
+        {
+            "name": "Bad Tom Smith Brewing"
+        },
+        {
+            "name": "H\u00f6gan\u00e4s Bryggeri"
+        },
+        {
+            "name": "Back Road Brewery"
+        },
+        {
+            "name": "Sons of Liberty Aleworks"
+        },
+        {
+            "name": "Shipyard Brewing"
+        },
+        {
+            "name": "Dewey Beer Co."
+        },
+        {
+            "name": "Bluegrass Brewing Company"
+        },
+        {
+            "name": "Tustin Brewing Company"
+        },
+        {
+            "name": "Helio Basin Brewing Co"
+        },
+        {
+            "name": "Thomas Hooker Brewing"
+        },
+        {
+            "name": "Monteith's Brewing Co"
+        },
+        {
+            "name": "Civil Life Brewing Company"
+        },
+        {
+            "name": "Hearthstone Brewery"
+        },
+        {
+            "name": "Half Full Brewery"
+        },
+        {
+            "name": "Bad Apple Brewhouse"
+        },
+        {
+            "name": "Tap It Brewing Co"
+        },
+        {
+            "name": "Erie Ale Works"
+        },
+        {
+            "name": "River Dog Brewing Company"
+        },
+        {
+            "name": "Lexington Brewing Company and Wine House"
+        },
+        {
+            "name": "Spanish Peaks Brewing"
+        },
+        {
+            "name": "Southern Barrel Brewing Co."
+        },
+        {
+            "name": "Honor Brewing Company"
+        },
+        {
+            "name": "Sand Creek Brewing Company"
+        },
+        {
+            "name": "Two Monkeys Brewing Co"
+        },
+        {
+            "name": "Appleton Beer Factory"
+        },
+        {
+            "name": "Naukabout Beer Company"
+        },
+        {
+            "name": "BBC Brewing Co., LLC"
+        },
+        {
+            "name": "Buckeye Lake Brewery"
+        },
+        {
+            "name": "Kelsey Creek Brewing Company"
+        },
+        {
+            "name": "Horsefly Brewing Co"
+        },
+        {
+            "name": "Portsmouth Brewing Co"
+        },
+        {
+            "name": "Ozark Beer Company"
+        },
+        {
+            "name": "Stamm Beer"
+        },
+        {
+            "name": "Goose Island Beer Company"
+        },
+        {
+            "name": "Onopa Brewing"
+        },
+        {
+            "name": "Good Nature Farm Brewery"
+        },
+        {
+            "name": "Knuth Brewing Company"
+        },
+        {
+            "name": "High Desert Brewing Co."
+        },
+        {
+            "name": "Cole Street Brewery"
+        },
+        {
+            "name": "Persephone Brewing Company"
+        },
+        {
+            "name": "Devil's Peak Brewing Company"
+        },
+        {
+            "name": "Way Beer"
+        },
+        {
+            "name": "Blind Squirrel"
+        },
+        {
+            "name": "Isle de Garde Brasserie"
+        },
+        {
+            "name": "Black Diamond Brewing Company"
+        },
+        {
+            "name": "Crooked Can Brewing"
+        },
+        {
+            "name": "August Schell Brewing Company"
+        },
+        {
+            "name": "Urban Growler Brewing Company"
+        },
+        {
+            "name": "ThumbCoast Brewing Company"
+        },
+        {
+            "name": "Von Jakob Brewery"
+        },
+        {
+            "name": "Wild Wolf Brewing Co"
+        },
+        {
+            "name": "Grand Canyon Brewing Company"
+        },
+        {
+            "name": "White Dog Brewing Co."
+        },
+        {
+            "name": "Murphy's Wagon Wheel"
+        },
+        {
+            "name": "Brevard Brewing Co."
+        },
+        {
+            "name": "Arizona Wilderness Brewing Company"
+        },
+        {
+            "name": "Rock Art Brewery"
+        },
+        {
+            "name": "Herkimer Pub & Brewery"
+        },
+        {
+            "name": "Pisgah Brewing Company"
+        },
+        {
+            "name": "Brevard Brewing Co."
+        },
+        {
+            "name": "Black Shirt Brewing Company"
+        },
+        {
+            "name": "Black Shirt Brewing Company"
+        },
+        {
+            "name": "Auburn Alehouse"
+        },
+        {
+            "name": "Reuben's Brews"
+        },
+        {
+            "name": "Natty Greene's Brewing Co."
+        },
+        {
+            "name": "Natty Greene's Brewing Co."
+        },
+        {
+            "name": "Tap It Brewing Co"
+        },
+        {
+            "name": "Wild Wolf Brewing Co"
+        },
+        {
+            "name": "Druid City Brewing Company"
+        },
+        {
+            "name": "Bay City Brewing"
+        },
+        {
+            "name": "McFate Brewing Company"
+        },
+        {
+            "name": "Falls City Brewing Company"
+        },
+        {
+            "name": "RAM Restaurant & Brewery"
+        },
+        {
+            "name": "Noble Ale Works"
+        },
+        {
+            "name": "Oceanside Ale Works"
+        },
+        {
+            "name": "Whaler's Brewing Company"
+        },
+        {
+            "name": "Seventh Son Brewing Company"
+        },
+        {
+            "name": "Empire Brewing Company"
+        },
+        {
+            "name": "Mikkeller"
+        },
+        {
+            "name": "Tr\u00f6egs Brewing Company"
+        },
+        {
+            "name": "Oskar Blues Brewery"
+        },
+        {
+            "name": "Zipline Brewing Co."
+        },
+        {
+            "name": "American Sky Brewing Co."
+        },
+        {
+            "name": "Carlyle Brewing"
+        },
+        {
+            "name": "Mad Anthony Brewing"
+        },
+        {
+            "name": "Crooked Ladder Brewery"
+        },
+        {
+            "name": "Deschutes Brewery"
+        },
+        {
+            "name": "Pitchers Brewery"
+        },
+        {
+            "name": "Bluegrass Brewing Company"
+        },
+        {
+            "name": "Ponderosa Brewing Company"
+        },
+        {
+            "name": "Upstream Brewing Company"
+        },
+        {
+            "name": "Woodman Brewery"
+        },
+        {
+            "name": "Main Street Brewing"
+        },
+        {
+            "name": "Four Horsemen Brewing Company"
+        },
+        {
+            "name": "Strawn Brewing Company"
+        },
+        {
+            "name": "Third Street Aleworks Restaurant & Brewery"
+        },
+        {
+            "name": "Falls City Brewing Company"
+        },
+        {
+            "name": "Lost Duck Brewing Company"
+        },
+        {
+            "name": "Thunderhead Brewing Company"
+        },
+        {
+            "name": "Bike Dog Brewing Company"
+        },
+        {
+            "name": "Pisgah Brewing Company"
+        },
+        {
+            "name": "Blowing Rock Brewery"
+        },
+        {
+            "name": "Crow Brewing Company"
+        },
+        {
+            "name": "Brown's Brewing Company"
+        },
+        {
+            "name": "Kulshan Brewing Company"
+        },
+        {
+            "name": "Squatters Craft Beers"
+        },
+        {
+            "name": "Utah Brewers Cooperative"
+        },
+        {
+            "name": "Station 26 Brewing Co."
+        },
+        {
+            "name": "Abigaile Brewery"
+        },
+        {
+            "name": "JDub's Brewing Company"
+        },
+        {
+            "name": "AC Golden Brewing Company"
+        },
+        {
+            "name": "Sons of Liberty Aleworks"
+        },
+        {
+            "name": "3 Nations Brewing Co."
+        },
+        {
+            "name": "Bluegrass Brewing Company"
+        },
+        {
+            "name": "Four Peaks Brewing Company"
+        },
+        {
+            "name": "Prairie Artisan Ales"
+        },
+        {
+            "name": "Devils Backbone Brewing Company"
+        },
+        {
+            "name": "Barley Mow Brewing Company"
+        },
+        {
+            "name": "Barley Mow Brewing Company"
+        },
+        {
+            "name": "Stone Brewing"
+        },
+        {
+            "name": "Guadalupe Brewing Company"
+        },
+        {
+            "name": "Bolo Beer Co."
+        },
+        {
+            "name": "Aftershock Brewing Company"
+        },
+        {
+            "name": "Zeta Brewing Company"
+        },
+        {
+            "name": "Big Wood Brewery"
+        },
+        {
+            "name": "Port Brewing Company"
+        },
+        {
+            "name": "Hi-Fi Brewing Co."
+        },
+        {
+            "name": "Siren Craft Brew"
+        },
+        {
+            "name": "Lancaster Brewing Company"
+        },
+        {
+            "name": "De Dochter van de Korenaar"
+        },
+        {
+            "name": "Indian Wells Brewing Company"
+        },
+        {
+            "name": "Phillips Brewing Company"
+        },
+        {
+            "name": "Mikkeller"
+        },
+        {
+            "name": "MobCraft Beer"
+        },
+        {
+            "name": "Monument City Brewing Company"
+        },
+        {
+            "name": "Moor Beer Company"
+        },
+        {
+            "name": "Tyris"
+        },
+        {
+            "name": "Wicked Weed Brewing Company"
+        },
+        {
+            "name": "Country Boy Brewing"
+        },
+        {
+            "name": "Milly's Tavern"
+        },
+        {
+            "name": "Hopcat"
+        },
+        {
+            "name": "Tin Whiskers Brewing Company"
+        },
+        {
+            "name": "Little Toad Creek Brewery"
+        },
+        {
+            "name": "Cerveja Amphora"
+        },
+        {
+            "name": "Butcherknife Brewing Company"
+        },
+        {
+            "name": "DESTIHL Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        },
+        {
+            "name": "Amstel Brewery"
+        }
+    ]
+}
