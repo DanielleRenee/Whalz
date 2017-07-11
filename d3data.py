@@ -55,7 +55,10 @@ for i in range(0, 10):
 
 
 #create a list of tuples with brewey name, beer name, and beer style_id
-style_tuples = []
+# style_tuples = []
+
+
+beer_dict = {}
 
 # for url in range(len(brews)):
 x = range(len(brews))
@@ -82,21 +85,15 @@ for i in x:
             # example: sty_num = brews['data'][1].get('styleId')
             #          61
 
-            style_tuples.append((brewery_name, beer_name, sty_num))
+            # check to see if brewery_name is in dictionary. if it is not, add it. 
 
 
+            if brewery_name in beer_dict:
+                beer_dict[brewery_name].append((beer_name, sty_num))
 
+            else:
+                beer_dict[brewery_name] = [(beer_name, sty_num)]
 
-# d = defaultdict(list)
-
-for k, v, n in style_tuples:
-    d[k].append((v, n))
-
-
-d = {}
-
-for k, v, n in style_tuples:
-    d[k].append((v, n))
 
 
 
@@ -130,9 +127,3 @@ data = {}
 #         style_id: 
 
 
-
-for i in x:
-
-f.write(str(d))
-
-f.close()
