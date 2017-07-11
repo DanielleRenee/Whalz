@@ -34,7 +34,7 @@ f = open("beerstyles.json", "w")
 
 brews = []
 
-for i in range(0, 10):
+for i in range(30, 32):
     # if i % 2 == 0:
 
         APIKEY = '9726819debab5cfdba5b6744dbbf1616'
@@ -58,7 +58,12 @@ for i in range(0, 10):
 # style_tuples = []
 
 
-beer_dict = {}
+# beer_dict = {}
+
+d3 = {}
+d3['nodes'] = []
+d3['links'] = []
+
 
 # for url in range(len(brews)):
 x = range(len(brews))
@@ -85,34 +90,60 @@ for i in x:
             # example: sty_num = brews['data'][1].get('styleId')
             #          61
 
+
             # check to see if brewery_name is in dictionary. if it is not, add it. 
+            # if brewery_name in beer_dict:
+            #     beer_dict[brewery_name].append((beer_name, sty_num))
+
+            # else:
+            #     beer_dict[brewery_name] = [(beer_name, sty_num)]
 
 
-            if brewery_name in beer_dict:
-                beer_dict[brewery_name].append((beer_name, sty_num))
-
+            if brewery_name in d3['nodes']:
+                d3['links'].append({'source': brewery_name, 'target': sty_num, "beer": beer_name})
+             
             else:
-                beer_dict[brewery_name] = [(beer_name, sty_num)]
+                d3['nodes'].append({'name': brewery_name})
+                d3['links'].append({'source': brewery_name, 'target': sty_num, "beer": beer_name})
 
 
+#at this stage we have a dictionary with breweries as the keys and the beers they produce as tuples with their style id.
+all_breweries = {}
 
-
+names = []
     
-all_breweries = d.viewkeys()
+for thing in beer_dict.viewkeys(): 
+    names.append(thing)
 
-beers = {}
-
-for k, v in d.iteritems():
-
-    beers['source'] = d[k]
-    beers['target']['beer_name'] = d[v]
-    beers['target']['style_id'] = d[n]
+for i in range(len(names)):
+    all_breweries[i] = {}
+    all_breweries[i]["name"] = names[i]
 
 
-data = {}
+d3 = {}
 
-    data['nodes'] = all_breweries
-    data['links'] = beers
+d3['nodes'] = [all_breweries]
+d3['links'] = beers
+
+
+
+
+
+
+# d['dict1']['innerkey'] = 'value'
+# d{'dict1': {'innerkey': 'value'}}
+
+# for k, v in beer_dict.items():
+
+#     d3['source'] = beer_dict[k]
+#     d3['target']['beer_name'] = 
+#     d3['target']['style_id'] = 
+
+
+# data = {}
+
+#     data['nodes'] = all_breweries
+#     data['links'] = beers
 
 
 
