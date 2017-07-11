@@ -32,6 +32,14 @@ def index():
 
 
 
+@app.route('/testingd3')
+def d3():
+    """Testing d3."""
+
+    return render_template("index.html")
+
+
+
 @app.route('/users')
 def user_list():
     """Show list of users."""
