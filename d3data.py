@@ -78,6 +78,12 @@ for i in x:
         if brewery != None:
 
             brewery_name = brewery[0]['name']
+            # brewery_local = brewery[0]['locations'][y]['region']
+            brewery_id = brewery[0]['id']
+            # brewery_type = brewery[0]['locations'][0]['locationTypeDisplay']
+            # brewery_website = brewery[0]['website']
+            # brewery_established = brewery[0]['established']
+            # brewery_open = brewery[0]['locations'][0]['yearOpened']
 
             # example: brewery_name = brewery[0]['name']
             #          u'Harpoon Brewery'
@@ -102,7 +108,7 @@ for i in x:
                 d3['links'].append({'source': brewery_name, 'target': sty_num, "beer": beer_name})
              
             else:
-                d3['nodes'].append({'name': brewery_name})
+                d3['nodes'].append({'name': brewery_name, "id": brewery_id})
                 d3['links'].append({'source': brewery_name, 'target': sty_num, "beer": beer_name})
 
 
