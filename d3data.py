@@ -33,7 +33,7 @@ from collections import defaultdict
 
 brews = []
 
-for i in range(50, 60):
+for i in range(600, 605):
     # if i % 2 == 0:
 
         APIKEY = '9726819debab5cfdba5b6744dbbf1616'
