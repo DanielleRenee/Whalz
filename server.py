@@ -32,24 +32,30 @@ def index():
 
 
 
-@app.route('/testingd3')
-def d3():
-    """Testing d3."""
+# @app.route('/testingd3')
+# def d3():
+#     """Testing d3."""
 
-    return render_template("xindex.html")
-
-
-@app.route("/try")
-def indextwo():
-    """Return try."""
-    return render_template("index.html")
+#     return render_template("xindex.html")
 
 
-@app.route('/basic')
-def basic():
-    """Testing plain d3."""
+@app.route("/trials")
+def trials():
+    """Return trials."""
+    return render_template("index_too.html")
 
-    return render_template("basicd3.html")
+
+@app.route("/example")
+def example():
+    """Return example."""
+    return render_template("index_too.html")
+
+
+# @app.route('/basic')
+# def basic():
+#     """Testing plain d3."""
+
+#     return render_template("basicd3.html")
 
 
 
