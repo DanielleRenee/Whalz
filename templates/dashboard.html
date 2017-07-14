@@ -96,63 +96,69 @@
 
   <div class="btn-toolbar dashhead-toolbar">
     <div class="btn-toolbar-item input-with-icon">
-      <input type="text" value="01/01/15 - 01/08/15" class="form-control" data-provide="datepicker">
+
+<!-- to do: change value to current week -->
+      <input type="text" value="07/24/17 - 07/31/17" class="form-control" data-provide="datepicker">
       <span class="icon icon-calendar"></span>
     </div>
   </div>
 </div>
 
+<!-- Add d3 with labels here. -->
+
 <hr class="mt-3">
+
 
 <div class="row text-center mt-5">
   <div class="col-md-4 mb-4 mb-md-3">
     <div class="w-3 mx-auto">
-      <!-- <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[230, 130]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Returning', 'New']">
-      </canvas> -->
+       <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
     </div>
-    <!-- <strong class="text-muted">Traffic</strong>
-    <h4>New vs Returning</h4> -->
+    <strong class="text-muted">Traffic</strong>
+    <h4>New vs Returning</h4>
   </div>
   <div class="col-md-4 mb-4 mb-md-3">
     <div class="w-3 mx-auto">
-      <!-- <canvas
+      <canvas
         class="ex-graph"
         width="200" height="200"
         data-chart="doughnut"
         data-dataset="[330, 30]"
         data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
         data-labels="['Returning', 'New']">
-      </canvas> -->
+      </canvas>
     </div>
-    <!-- <strong class="text-muted">Revenue</strong>
-    <h4>New vs Recurring</h4> -->
+    <strong class="text-muted">Revenue</strong>
+    <h4>New vs Recurring</h4>
   </div>
   <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto"></div>
-      
-<!-- Need to add one d3 element here.  -->
-
-<svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
-<svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
-<svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
-<svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
-<svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
-<svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg>
-
-
-
-
+    <div class="w-3 mx-auto">
+      <canvas
+        class="ex-graph"
+        width="200" height="200"
+        data-chart="doughnut"
+        data-dataset="[100, 260]"
+        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
+        data-labels="['Referrals', 'Direct']">
+      </canvas>
     </div>
     <strong class="text-muted">Traffic</strong>
     <h4>Direct vs Referrals</h4>
   </div>
 </div>
+
+
+
+
+<!-- Need to add one d3 element here.  -->
+
+<!-- <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg> -->
+<!-- <svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
+<svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
+<svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
+<svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
+<svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg> -->
+
 
 <div class="hr-divider mt-5 mb-3">
   <h3 class="hr-divider-content hr-divider-heading">This week's featured picks</h3>
@@ -289,6 +295,7 @@ var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
     config5.maxValue = 150
     config5.displayPercent = false;
     var gauge6 = loadLiquidFillGauge("fillgauge6", 120, config5);
+
    
 
     function NewValue(){
