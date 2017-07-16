@@ -144,7 +144,7 @@ def dash():
 
     new_list = []
 
-    for i in range(0, 40):
+    for i in range(0, 5):
 
         new_name = new_brews['data'][i].get('name')
         beer_id = new_brews['data'][i].get('id')
@@ -177,6 +177,49 @@ def dash():
                                              style_name=style_name, 
                                              style_description=style_description, 
                                              new_list=new_list)
+
+
+@app.route('/fresh')
+def fresh():
+    """Show freshest beers on the market."""
+
+    # call for new brews
+
+    z = requests.get("http://api.brewerydb.com/v2/beers?key=9726819debab5cfdba5b6744dbbf1616&order=createDate&sort=DESC&withBreweries=Y&withIngredients=Y")
+
+    new_brews = z.json()
+
+    new_list = []
+
+    for i in range(0, 50):
+
+        new_name = new_brews['data'][i].get('name')
+        beer_id = new_brews['data'][i].get('id')
+        new_description = new_brews['data'][i].get('description')
+        
+        brewery = new_brews['data'][i].get('breweries')
+
+        if brewery != None:
+            new_brewery_name = brewery[0]['name']
+            name_display = new_brews['data'][i].get('nameDisplay')
+            labels = new_brews['data'][i].get('labels')
+            website = new_brews['data'][i].get('website')
+            year = new_brews['data'][i].get('year')
+            beer_variation = new_brews['data'][i].get('beerVariation')
+            beer_variation_id = new_brews['data'][i].get('beerVariationId')
+            style_id = new_brews['data'][i].get('styleId')
+            abv = new_brews['data'][i].get('abv')
+            ibu = new_brews['data'][i].get('ibu')
+
+            if new_description != None:
+                    new_list.append([new_name, new_description, new_brewery_name, abv])
+
+    # print new_list
+
+
+    return render_template("fresh_off_the_boat.html",  
+                            new_list=new_list)
+
 
 
 
