@@ -143,48 +143,6 @@
   </div>
 </div>
 
-<!--   <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[330, 30]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Returning', 'New']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Revenue</strong>
-    <h4>New vs Recurring</h4>
-  </div>
-
-
-  <div class="col-md-4 mb-4 mb-md-3">
-    <div class="w-3 mx-auto">
-      <canvas
-        class="ex-graph"
-        width="200" height="200"
-        data-chart="doughnut"
-        data-dataset="[100, 260]"
-        data-dataset-options="{ backgroundColor: ['#1ca8dd', '#1bc98e'] }"
-        data-labels="['Referrals', 'Direct']">
-      </canvas>
-    </div>
-    <strong class="text-muted">Traffic</strong>
-    <h4>Direct vs Referrals</h4>
-  </div>
-</div> -->
-
-
-<!-- Need to add one d3 element here.  -->
-
-<!-- <svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg> -->
-<!-- <svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
-<svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
-<svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
-<svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
-<svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg> -->
-
 
 <div class="hr-divider mt-5 mb-3">
   <h3 class="hr-divider-content hr-divider-heading">This week's featured picks</h3>
@@ -225,10 +183,11 @@
 
     <div class="list-group mb-3">
       <h6 class="list-group-header">
-        Fresh off the boat
+      <a class="nav-link" href="/fresh">Fresh off the boat</a>
       </h6>
       {% for new in new_list %}
         <a class="list-group-item list-group-item-action justify-content-between" href="#">
+<!--           modify the href here to do something when you click on the freshest releases -->
           <h5 class="mb-1">{{ new[0] }}</h5>
           <span class="text-muted">{{ new[2] }}</span>
           <p>{{ new[1] }}</p>
@@ -254,6 +213,48 @@
     </div>
   </div>
 </div>
+
+
+
+<div class="modal">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Medium Modal</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body modal-body-scroller">
+        <p>Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui.</p>
+
+        <p>Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+
+        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum.</p>
+      </div>
+
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Message">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
     <script language="JavaScript">
 
