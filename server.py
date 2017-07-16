@@ -210,9 +210,10 @@ def fresh():
             style_id = new_brews['data'][i].get('styleId')
             abv = new_brews['data'][i].get('abv')
             ibu = new_brews['data'][i].get('ibu')
+            abv_display_bar = float(abv) * 10
 
             if new_description != None:
-                    new_list.append([new_name, new_description, new_brewery_name, abv])
+                    new_list.append([new_name, new_description, new_brewery_name, abv, abv_display_bar])
 
     # print new_list
 
