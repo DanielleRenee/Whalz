@@ -85,6 +85,9 @@ def load_users():
     >>> user.password
     'H_$8)sXym1'
 
+    >>> user.inventories
+    []
+
     """
 
     print "All of your great fake users are being loaded"
