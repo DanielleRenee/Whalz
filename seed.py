@@ -182,12 +182,26 @@ def load_isos():
 
 
 
-
 def search_for_trades():
 
-    """create a tuple of every inventory_id, iso_id in possible_trades"""
+    """
+    create a tuple of every inventory_id, iso_id in possible_trades
+
+    >>> example_tuple = (2, 14)
+    >>> second_tuple = (2, 14)
+    >>> lst = []
+    >>> lst.append(example_tuple)
+    >>> lst.append(second_tuple)
+    >>> lst
+    [(2, 14), (2, 14)]
+    >>> set(lst)
+    set([(2, 14)])
+
+    """
 
     possible_list = []
+
+    # possible = possible_trades.query.all()
 
     all_possible = db.session.query(ViewPossibleTrade.inventory_id, ViewPossibleTrade.iso_id).all()
 
@@ -221,9 +235,6 @@ def search_for_trades():
 
 #     trade = Trade(initial_trade=4, reciprocal_trade=22, quantity=1)
 #     db.session.add(trade)
-      
-
-qw
 
 
 
@@ -233,10 +244,10 @@ qw
 
 if __name__ == "__main__":
     connect_to_db(app)
-    db.create_all()
-    load_beer()
-    load_users()
-    load_inventories()
-    load_isos()
+    # db.create_all()
+    # load_beer()
+    # load_users()
+    # load_inventories()
+    # load_isos()
     # load_possible_trades()
 
