@@ -111,10 +111,17 @@ def load_users():
 
 
 def load_inventories():
-    from mixer.backend.flask import mixer
-    mixer.init_app(app)
+    # from mixer.backend.flask import mixer
+    # mixer.init_app(app)
 
-    """Load small sample of inventories into database."""
+    """
+    Load small sample of inventories into database.
+
+    >>> import random
+    >>> random.choice
+    <bound method Random.choice of <random.Random object at 0x1236350>>
+
+    """
 
     print "Inventories are filling up. Waiting in 1PP lines really pays off."
 
@@ -135,12 +142,18 @@ def load_inventories():
 
 def load_isos():
 
-    """Load small sample of isos into database."""
+    """
+    Load small sample of isos into database.
+
+    >>> range(0, 20)
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+    """
 
     print "Fear of missing out is real. ISOs are being generated."
 
     for i in range(0, 20):
-    #create 20 random inventory items
+    #create 19 random inventory items
         beer_code_list = ["4Vmwih", "oQR5YM", "Qg6dpg", "9wNKio", "0DVz81", "YP4dCI", "Eyr9Kg", "jT5vQ0", "4Vmwih", "kQ42vv"]
         user_id = random.randint(1, 100)
         beer_code = random.choice(beer_code_list)
