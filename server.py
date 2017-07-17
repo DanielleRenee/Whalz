@@ -54,7 +54,29 @@ def user_list():
 
 @app.route('/trade')
 def trade_list():
-    """Show list of trades."""
+    """
+    Show list of trades.
+
+    >>> trades = Trade.query.all()
+    >>> type(trades)
+    <type 'list'>
+
+    >>> trades[0]
+    <model.Trade object at 0x7f11970942d0>
+
+    >>> print "Initial: {}, Reciprocate: {}".format(initial, reciprocate)
+    Initial: 4, Reciprocate: 22
+    Initial: 19, Reciprocate: 9
+    Initial: 7, Reciprocate: 3
+    Initial: 10, Reciprocate: 2
+    Initial: 1, Reciprocate: 18
+    Initial: 17, Reciprocate: 2
+
+
+    >>> print "Beer #1: {}, User #1: {}".format(beer_one, user_one)
+    Beer #1: 1916 Shore Shiver, User #1: Brent Chavez
+        
+    """
 
     trades = Trade.query.all()
 
@@ -156,7 +178,7 @@ def dash():
             style_id = new_brews['data'][i].get('styleId')
             abv = new_brews['data'][i].get('abv')
             ibu = new_brews['data'][i].get('ibu')
-            
+
             if abv != None: 
                 abv_display_bar = float(abv) * 10
 
@@ -181,7 +203,8 @@ def fresh():
     Show freshest beers on the market.
     Calls Brewery DB API for first 50 new releases.
 
-
+    >>> type(abv)
+    float
 
     """
 
