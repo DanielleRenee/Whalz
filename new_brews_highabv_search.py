@@ -1,4 +1,18 @@
-"""Get latest feature from BDB."""
+def get_high_abv():
+    """
+    Get the latest beers released with an abv over 10%
+
+    What's trending in the high abv world? 
+
+    >>> import requests
+    >>> import json
+    >>> r = requests.get("http://api.brewerydb.com/v2/beers?styleId=132&order=createDate&sort=DESC&key=9726819debab5cfdba5b6744dbbf1616")
+    >>> 
+
+    The latest releases in the Wood- and Barrel-Aged Beer style. 
+    Maybe this should be the spotlight - or use this for a barrel-aged d3 bubble.
+
+    """
 
 import requests
 import json

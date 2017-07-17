@@ -18,7 +18,10 @@ db = SQLAlchemy()
 # Model definitions
 
 class User(db.Model):
-    """User of Whalz website."""
+    """
+    User of Whalz website.
+
+    """
 
     __tablename__ = "users"
 
@@ -36,7 +39,12 @@ class User(db.Model):
 
 
 class Beer(db.Model):
-    """Kind of beer in database."""
+    """
+    Kind of beer in database.
+
+
+
+    """
 
     __tablename__ = "beers"
 
@@ -62,7 +70,13 @@ class Beer(db.Model):
 
 
 class Inventory(db.Model):
-    """Inventory of a beer by a user."""
+    """
+    Inventory of a beer by a user.
+
+
+
+
+    """
 
     __tablename__ = "inventories"
 
@@ -95,7 +109,14 @@ class Inventory(db.Model):
 
 
 class ISO(db.Model):
-    """Wish list of individual beers by a user. The In Search Of aka ISO table."""
+    """
+    Wish list of individual beers by a user. The In Search Of aka ISO table.
+
+
+
+
+
+    """
 
     __tablename__ = "iso"
 
