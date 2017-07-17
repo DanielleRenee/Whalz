@@ -11,7 +11,18 @@ import json
 
 
 def load_beer():
-    """Load beer from allbeerdata.json into database."""
+    """
+    Load beer from allbeerdata.json into database.
+
+    >>> beerz = json.load(open('seed_data/allbeerdata.json'))
+    >>> len(beerz)
+    6300
+
+    >>> name = beerz[1]['name_display']
+    >>> name
+    u'1916 Irish Stout'
+
+    """
 
     beerz = json.load(open('seed_data/allbeerdata.json'))
     beerz_len = len(beerz)
@@ -61,7 +72,20 @@ def load_beer():
 
 
 def load_users():
-    """Load users from easy fake data generated into database."""
+    """
+    Load users from easy fake data generated into database.
+
+    >>> user = <User user_id=None email=walterbarnett@yahoo.com>
+    >>> user.name
+    'James Bishop'
+
+    >>> user.email
+    'walterbarnett@yahoo.com'
+
+    >>> user.password
+    'H_$8)sXym1'
+
+    """
 
     print "All of your great fake users are being loaded"
 
