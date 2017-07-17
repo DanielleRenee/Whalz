@@ -101,7 +101,17 @@ def trade_list():
 
 @app.route('/dashboard')
 def dash():
-    """Show dashboard."""
+    """
+    Calls Brewery DB API for a featured beer and style. 
+    Then calls Brewery DB API first four new releases and the dashboard.
+
+    >>> type(new_list)
+    list
+
+    >>> type(abv)
+    float
+
+    """
 
     # call for featured beer and style
 
@@ -146,14 +156,16 @@ def dash():
             style_id = new_brews['data'][i].get('styleId')
             abv = new_brews['data'][i].get('abv')
             ibu = new_brews['data'][i].get('ibu')
-            abv_display_bar = float(abv) * 10
+            
+            if abv != None: 
+                abv_display_bar = float(abv) * 10
 
-        if new_description != None:
+        if new_description != None and abv != None:
             new_list.append([new_name, new_description, new_brewery_name, abv, abv_display_bar])
 
     # print new_list
 
-
+    # return beer_name, abv, description, style_id, style_name, style_description, new_list
     return render_template("dashboard.html", beer_name=beer_name, 
                                              abv=abv, 
                                              description=description, 
@@ -165,7 +177,13 @@ def dash():
 
 @app.route('/fresh')
 def fresh():
-    """Show freshest beers on the market."""
+    """
+    Show freshest beers on the market.
+    Calls Brewery DB API for first 50 new releases.
+
+
+
+    """
 
     # call for new brews
 
@@ -194,7 +212,7 @@ def fresh():
             style_id = new_brews['data'][i].get('styleId')
             abv = new_brews['data'][i].get('abv')
             ibu = new_brews['data'][i].get('ibu')
-            
+
             if abv != None: 
                 abv_display_bar = float(abv) * 10
 
@@ -224,4 +242,4 @@ if __name__ == "__main__":
     # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
-    app.run(host="0.0.0.0")
+    # app.run(host="0.0.0.0")
