@@ -121,10 +121,11 @@
 <div class="row text-center mt-5">
   <div class="col-md-4 mb-4 mb-md-3">
     <div class="w-3 mx-auto">
+<!--        <svg id="fillgauge6" width="100%" height="250" onclick="gauge6.update(NewValue());"></svg> -->
        <svg id="fillgauge1" width="100%" height="250" onclick="gauge1.update(NewValue());"></svg>
     </div>
-    <strong class="text-muted">Highest trade volume this week</strong>
-    <h4>Bourbon County Vanilla</h4>
+    <strong class="text-muted">Bourbon County Vanilla</strong>
+    <h4>Highest ISO across all members</h4>
   </div>
 
 
@@ -133,8 +134,8 @@
     <div class="w-3 mx-auto">
        <svg id="fillgauge2" width="100%" height="250" onclick="gauge2.update(NewValue());"></svg>
     </div>
-    <strong class="text-muted">Most sought after beer this week</strong>
-    <h4>Strawberry Creamsicle IPA</h4>
+    <strong class="text-muted">Strawberry Creamsicle IPA</strong>
+    <h4>Highest Summer ISO</h4>
   </div>
 
 
@@ -144,8 +145,8 @@
     <div class="w-3 mx-auto">
        <svg id="fillgauge3" width="100%" height="250" onclick="gauge3.update(NewValue());"></svg>
     </div>
-    <strong class="text-muted">Coming soon</strong>
-    <h4>KBBS</h4>
+    <strong class="text-muted">Kentucky Bourbon Brand Stout</strong>
+    <h4>Brew with the largest number of 5 star ratings</h4>
   </div>
 </div>
 
@@ -328,7 +329,7 @@ var gauge1 = loadLiquidFillGauge("fillgauge1", 55);
     config5.minValue = 30;
     config5.maxValue = 150
     config5.displayPercent = false;
-    var gauge6 = loadLiquidFillGauge("fillgauge6", 120, config5);
+    var gauge6 = loadLiquidFillGauge("fillgauge6", 18, config5);
 
    
 
