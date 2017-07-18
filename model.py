@@ -20,6 +20,7 @@ db = SQLAlchemy()
 class User(db.Model):
     """
     User of Whalz website.
+    
 
     """
 
