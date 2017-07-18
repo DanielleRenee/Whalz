@@ -159,7 +159,7 @@ def dash():
 
     new_list = []
 
-    for i in range(0, 5):
+    for i in range(0, 10):
 
         new_name = new_brews['data'][i].get('name')
         beer_id = new_brews['data'][i].get('id')
@@ -182,8 +182,8 @@ def dash():
             if abv != None: 
                 abv_display_bar = float(abv) * 10
 
-        if new_description != None and abv != None:
-            new_list.append([new_name, new_description, new_brewery_name, abv, abv_display_bar])
+            if new_description != None and abv != None:
+                new_list.append([new_name, new_description, new_brewery_name, abv, abv_display_bar])
 
     # print new_list
 
@@ -265,4 +265,4 @@ if __name__ == "__main__":
     # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
-    # app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0")
