@@ -7,7 +7,11 @@ def get_high_abv():
     >>> import requests
     >>> import json
     >>> r = requests.get("http://api.brewerydb.com/v2/beers?styleId=132&order=createDate&sort=DESC&key=9726819debab5cfdba5b6744dbbf1616")
-    >>> 
+    >>> new_brews = r.json()
+    >>> new_brews.keys()
+    [u'status', u'currentPage', u'totalResults', u'data', u'numberOfPages']
+    >>> type(new_brews['data'])
+    <type 'list'>
 
     The latest releases in the Wood- and Barrel-Aged Beer style. 
     Maybe this should be the spotlight - or use this for a barrel-aged d3 bubble.
@@ -42,5 +46,3 @@ for i in range(0, 50):
 
         print name 
         print description
-
-           
