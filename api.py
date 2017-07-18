@@ -3,6 +3,8 @@ import os
 import sys
 import json
 
+#need to refractor to use recursion instead!
+
 
 f = open("allbeerdata.json", "w")
 
