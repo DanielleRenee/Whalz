@@ -1,6 +1,16 @@
 def search_for_trades():
 
-    """create a tuple of every inventory_id, iso_id in possible_trades"""
+    """
+    Create a tuple of every inventory_id, iso_id in possible_trades.
+
+    >>> example_tuple = (2, 14)
+    >>> second_tuple = (2, 14)
+    >>> lst = []
+    >>> lst.append(example_tuple)
+    >>> lst.append(second_tuple)
+
+    """
+
 
     possible_list = []
 
@@ -16,7 +26,15 @@ return possible_list
 
 
 def other_way(): 
-    """Evaluates the list of possible trade tuples and checks to see if there are any matches the other way"""
+    """
+    Evaluates the list of possible trade tuples and checks to see if there are any matches the other way
+
+     >>> lst
+    [(2, 14), (2, 14)]
+    >>> set(lst)
+    set([(2, 14)])
+
+    """
 
     check_the_other_way = [(t[1], t[0]) for t in possible_list]
 
@@ -31,12 +49,6 @@ def other_way():
 
     its_a_match = set(all_possible) & set(check_the_other_way)
     # example: set([(2, 14), (7, 7), (13, 6), (6, 13), (14, 2), (15, 15)])
-
-
-
-    hard code the results 
-
-
 
 
    
