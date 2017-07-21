@@ -76,10 +76,6 @@ def other_way():
 
    
 
-
-
-   -----------------------------------------------------------
-
     # then search for a trader either within a close proximty, with the most matches, with the highest rating...
 
     # update iso status from active to be false 
