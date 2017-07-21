@@ -1,3 +1,18 @@
+# To facilitate a beer trade: 
+
+# I query the database: 
+# this returns all possible trades in a list, where each possibility is a tuple,
+# the first index of the tuple is inventory_id and the second is iso_id
+
+# my function looks to see if for any given possibility tuple, a tuple with the opposite indexes exist. 
+
+# an iso_id that maps to: Bourbon County and an inventory_id that maps to: Morning Delight
+
+# looks for an iso_id that maps to: Morning Delight, and an inventory_id that maps to: Bourbon County Vanilla 
+
+# side note, a beer's primary key is set a unqiue 5 digit ascii character - to avoid confusion with the highly complicated beer variations and common naming practices. Example: 878 beers with the name Amber Ale.
+
+
 def search_for_trades():
 
     """
