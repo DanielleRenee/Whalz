@@ -10,7 +10,15 @@
 
 # looks for an iso_id that maps to: Morning Delight, and an inventory_id that maps to: Bourbon County Vanilla 
 
-# side note, a beer's primary key is set a unqiue 5 digit ascii character - to avoid confusion with the highly complicated beer variations and common naming practices. Example: 878 beers with the name Amber Ale.
+# side note, a beer's primary key is set a unique 5 digit ascii character - to avoid confusion with the highly complicated beer variations and common naming practices. Example: 878 beers with the name Amber Ale.
+
+# it turns out that this is infact, very rare. 
+
+# so for v1, there was no need to implement a priority queue, because there never existed a case where multiple matches were found and I needed a tie breaker.
+
+# before a trade can be added to the session, 
+# the iso statuses need to be changed from active to false and the inventory qtys need to be updated for both members. 
+
 
 
 def search_for_trades():
