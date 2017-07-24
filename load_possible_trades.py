@@ -74,7 +74,6 @@ def other_way():
     # example: set([(2, 14), (7, 7), (13, 6), (6, 13), (14, 2), (15, 15)])
 
 
-   
 
     # then search for a trader either within a close proximty, with the most matches, with the highest rating...
 

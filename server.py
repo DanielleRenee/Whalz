@@ -52,6 +52,30 @@ def user_list():
 
 
 
+
+@app.route('/one_option')
+def one_option():
+    """Show one member a possible trade."""
+
+    # could show one user's possible trades during demo?
+    # click on the 'search for trades' button and show module with the query results - just an option. 
+    # search for Laura Ford, user id #6
+    # find all of Laura's possible trades
+    
+
+    one_user = User.query.get(6)
+
+    laura_inventory = SELECT * FROM inventories WHERE user_id = 6;
+
+
+    Laura = one_user.name
+
+    return Laura 
+
+
+
+
+
 @app.route('/trade')
 def trade_list():
     """
@@ -265,4 +289,4 @@ if __name__ == "__main__":
     # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
-    app.run(host="0.0.0.0")
+    # app.run(host="0.0.0.0")
