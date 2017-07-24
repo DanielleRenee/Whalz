@@ -26,6 +26,12 @@
         -o-background-size: cover;
         background-size: cover;
       }
+
+        #sidelogo { 
+        width: 75%;
+        height: 75%; 
+      }
+
     </style>
 
   </head>
@@ -46,7 +52,10 @@
               <span class="sr-only">Toggle nav</span>
             </button>
             <a class="sidebar-brand img-responsive" href="/">
-              <span class="icon icon-cup sidebar-brand-icon"></span>
+      <!--         <span class="icon icon-cup sidebar-brand-icon"></span> -->
+
+             <img src="static/whalz_logo.png" alt="Whalz Sidebar Logo" id='sidelogo'>
+
             </a>
           </div>
 
@@ -55,13 +64,13 @@
             <ul class="nav nav-pills nav-stacked flex-column">
               <li class="nav-header">Dashboards</li>
               <li class="nav-item">
-                <a class="nav-link " href="/dashboard">Whalz dashboard</a>
+                <a class="nav-link " href="/dashboard">Brew Happenings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/trade">Trade dashboard</a>
+                <a class="nav-link active" href="/trade">Trades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/fresh">Fresh dashboard</a>
+                <a class="nav-link" href="/fresh">Fresh off the Boat</a>
               </li>
 
               <li class="nav-item">
