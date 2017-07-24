@@ -81,9 +81,42 @@
 
 
 <div class="hr-divider mt-5 mb-3">
-  <h3 class="hr-divider-content hr-divider-heading">Calling the api</h3>
+  <h3 class="hr-divider-content hr-divider-heading">Using the api for something it didn't want to share with me.</h3>
 </div>
-  <pre>"What does this look like?"</pre>
+  <pre>
+    
+    
+    z = requests.get("http://api.brewerydb.com/...")
+
+    new_brews = z.json()
+
+    new_list = []
+
+    for i in range(0, 50):
+
+        new_name = new_brews['data'][i].get('name')
+        beer_id = new_brews['data'][i].get('id')
+        new_description = new_brews['data'][i].get('description')
+        
+        brewery = new_brews['data'][i].get('breweries')
+
+        if brewery != None:
+            new_brewery_name = brewery[0]['name']
+            name_display = new_brews['data'][i].get('nameDisplay')
+            abv = new_brews['data'][i].get('abv')
+            ibu = new_brews['data'][i].get('ibu')
+
+            if abv != None: 
+                abv_display_bar = float(abv) * 10
+
+            if new_description != None and abv != None:
+                new_list.append([new_name, 
+                                 new_description, 
+                                 new_brewery_name, 
+                                 abv, 
+                                 abv_display_bar])
+
+    return render_template("fresh.html", new_list=new_list) </pre>
 
 
 
