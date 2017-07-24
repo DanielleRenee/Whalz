@@ -30,10 +30,17 @@ def index():
     return render_template("homepage.html")
 
 
-@app.route("/demo")
-def demo():
+@app.route("/demoapi")
+def demoapi():
     """Return demo code snippets."""
     return render_template("demo.html")
+
+
+
+@app.route("/demotrade")
+def demotrade():
+    """Return demo code snippets."""
+    return render_template("demo2.html")
 
 
 @app.route("/example")

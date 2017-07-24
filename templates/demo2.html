@@ -65,7 +65,7 @@
         <div class="dashhead">
   <div class="dashhead-titles">
     <h6 class="dashhead-subtitle">Demo</h6>
-    <h2 class="dashhead-title">Brewery DB API</h2>
+    <h2 class="dashhead-title">Beer trading among members</h2>
   </div>
 
   <div class="btn-toolbar dashhead-toolbar">
@@ -81,42 +81,47 @@
 
 
 <div class="hr-divider mt-5 mb-3">
-  <h3 class="hr-divider-content hr-divider-heading">Cleaning up dirty data at multiple stages.</h3>
+  <h3 class="hr-divider-content hr-divider-heading">Looking for trades.</h3>
 </div>
   <pre>
+  
+def search_for_trades():
+
+    """ Returns all possible trades in a list, where each possibility is a tuple:
+
+    the first index of the tuple is inventory_id and the second is iso_id.
+    
+    """
+
+    possible_list = []
+
+    all_possible = db.session.query(ViewPossibleTrade.inventory_id, ViewPossibleTrade.iso_id).all()
+
+    for each in all_possible:
+        possible_list.append(each)
+
+   
+return possible_list
 
 
-    z = requests.get("http://api.brewerydb.com/...")
 
-    new_brews = z.json()
+def other_way(): 
 
-    new_list = []
+    """ Evaluates the list of possible trade tuples, 
+    
+    checks to see if there are any matches the other way.
 
-    for i in range(0, 50):
+    """
 
-        new_name = new_brews['data'][i].get('name')
-        beer_id = new_brews['data'][i].get('id')
-        new_description = new_brews['data'][i].get('description')
-        
-        brewery = new_brews['data'][i].get('breweries')
+    check_the_other_way = [(t[1], t[0]) for t in possible_list
 
-        if brewery != None:
-            new_brewery_name = brewery[0]['name']
-            name_display = new_brews['data'][i].get('nameDisplay')
-            abv = new_brews['data'][i].get('abv')
-            ibu = new_brews['data'][i].get('ibu')
 
-            if abv != None: 
-                abv_display_bar = float(abv) * 10
+    its_a_match = set(all_possible) & set(check_the_other_way)
 
-            if new_description != None and abv != None:
-                new_list.append([new_name, 
-                                 new_description, 
-                                 new_brewery_name, 
-                                 abv, 
-                                 abv_display_bar])
 
-    return render_template("fresh.html", new_list=new_list) </pre>
+return its_a_match 
+
+      </pre>
 
 
 
