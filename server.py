@@ -65,15 +65,12 @@ def one_option():
 
     one_user = User.query.get(6)
 
-    laura_inventory = SELECT * FROM inventories WHERE user_id = 6;
+    # laura_inventory = SELECT * FROM inventories WHERE user_id = 6;
 
 
     Laura = one_user.name
 
     return Laura 
-
-
-
 
 
 @app.route('/trade')
@@ -289,4 +286,4 @@ if __name__ == "__main__":
     # Use the DebugToolbar
     # DebugToolbarExtension(app)
 
-    # app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0")
