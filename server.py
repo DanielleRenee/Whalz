@@ -30,10 +30,10 @@ def index():
     return render_template("homepage.html")
 
 
-@app.route("/trials")
-def trials():
-    """Return trials."""
-    return render_template("index_too.html")
+@app.route("/demo")
+def demo():
+    """Return demo code snippets."""
+    return render_template("demo.html")
 
 
 @app.route("/example")
