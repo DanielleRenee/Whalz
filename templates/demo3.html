@@ -65,7 +65,7 @@
         <div class="dashhead">
   <div class="dashhead-titles">
     <h6 class="dashhead-subtitle">Demo</h6>
-    <h2 class="dashhead-title">Brewery DB API</h2>
+    <h2 class="dashhead-title">Whalz Database</h2>
   </div>
 
   <div class="btn-toolbar dashhead-toolbar">
@@ -81,38 +81,36 @@
 
 
 <div class="hr-divider mt-5 mb-3">
-  <h3 class="hr-divider-content hr-divider-heading">Cleaning up data for the Fresh Dashboard.</h3>
+  <h3 class="hr-divider-content hr-divider-heading">Important note on beer primary key.</h3>
 </div>
   <pre>
 
-   http://api.brewerydb.com/v2/beers?key=key&order=createDate&sort=DESC&withBreweries=Y
 
+class Beer(db.Model):
+    """ Kind of beer in database. """
 
-    for i in range(0, 50):
+    __tablename__ = "beers"
 
-        new_name = new_brews['data'][i].get('name')
-        beer_id = new_brews['data'][i].get('id')
-        new_description = new_brews['data'][i].get('description')
-        
-        brewery = new_brews['data'][i].get('breweries')
+    beer_code = db.Column(db.String(10), primary_key=True)
 
-        if brewery != None:
-            new_brewery_name = brewery[0]['name']
-            name_display = new_brews['data'][i].get('nameDisplay')
-            abv = new_brews['data'][i].get('abv')
-            ibu = new_brews['data'][i].get('ibu')
+    name = db.Column(db.String(100), nullable=False)
+    
+    style_id = db.Column(db.Integer, nullable=True)
+    
+    year = db.Column(db.Integer, nullable=True)
+    
+    abv = db.Column(db.Float, nullable=True)
+    
+    description = db.Column(db.Text, nullable=True)
+    
+    beer_variation = db.Column(db.String(100), nullable=True)
+    
+    beer_variation_id = db.Column(db.String(100), nullable=True)
+    
+    ibu = db.Column(db.Float, nullable=True)
+   
 
-            if abv != None: 
-                abv_display_bar = float(abv) * 10
-
-            if new_description != None and abv != None:
-                new_list.append([new_name, 
-                                 new_description, 
-                                 new_brewery_name, 
-                                 abv, 
-                                 abv_display_bar])
-
-   </pre>
+ </pre>
 
 
 
