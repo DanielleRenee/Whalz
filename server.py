@@ -43,6 +43,13 @@ def demotrade():
     return render_template("demo2.html")
 
 
+
+@app.route("/demo")
+def demo():
+    """Return background for demo."""
+    return render_template("demo3.html")
+
+
 @app.route("/example")
 def example():
     """Return example."""

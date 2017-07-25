@@ -35,6 +35,11 @@
         background-size: cover;
       }
 
+        #sidelogo { 
+        width: 75%;
+        height: 75%; 
+      }
+
       .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
     </style>
 
@@ -57,17 +62,19 @@
               <span class="sr-only">Toggle nav</span>
             </button>
             <a class="sidebar-brand img-responsive" href="/">
-              <span class="icon icon-cup sidebar-brand-icon"></span>
+         <!--      <span class="icon icon-cup sidebar-brand-icon"></span> -->
+
+              <img src="static/whalz_logo.png" alt="Whalz Sidebar Logo" id='sidelogo'>
             </a>
           </div>
 
           <div class="collapse nav-toggleable-md" id="nav-toggleable-md">
-            <form class="sidebar-form">
+      <!--       <form class="sidebar-form">
               <input class="form-control" type="text" placeholder="Search...">
               <button type="submit" class="btn-link">
                 <span class="icon icon-magnifying-glass"></span>
               </button>
-            </form>
+            </form> -->
             <ul class="nav nav-pills nav-stacked flex-column">
               <li class="nav-header">Dashboards</li>
                 <li class="nav-item">
