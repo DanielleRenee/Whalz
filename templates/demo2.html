@@ -81,45 +81,35 @@
 
 
 <div class="hr-divider mt-5 mb-3">
-  <h3 class="hr-divider-content hr-divider-heading">Looking for trades.</h3>
+  <h3 class="hr-divider-content hr-divider-heading">Beer trading algorithm overview.</h3>
 </div>
   <pre>
   
-def search_for_trades():
+def trade_algorithm():
 
-    """ Returns all possible trades in a list, where each possibility is a tuple:
+    """ Returns all possible trades in a list, where each possibility is a tuple.
 
-    the first index of the tuple is inventory_id and the second is iso_id.
+    Evaluates the list of possible trade tuples, checks to see if there are any matches the other way.
     
     """
 
-    possible_list = []
+    EXAMPLE: 
 
-    all_possible = db.session.query(ViewPossibleTrade.inventory_id, ViewPossibleTrade.iso_id).all()
+    MATT has an ISO_ID that maps to BOURBON COUNTY VANILLA
 
-    for each in all_possible:
-        possible_list.append(each)
-
-   
-return possible_list
+    MATT has an INVENTORY_ID that maps to MORNING DELIGHT 
 
 
-
-def other_way(): 
-
-    """ Evaluates the list of possible trade tuples, 
-    
-    checks to see if there are any matches the other way.
-
-    """
-
-    check_the_other_way = [(t[1], t[0]) for t in possible_list
+    ----- THE ALGORITHM LOOKS FOR ------
 
 
-    its_a_match = set(all_possible) & set(check_the_other_way)
+    A MEMBER who has an ISO_ID that maps to MORNING DELIGHT
+
+         ******* AND *******
+
+    AN INVENTORY_ID that maps to BOURBON COUNTY VANILLA
 
 
-return its_a_match 
 
       </pre>
 

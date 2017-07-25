@@ -129,7 +129,8 @@ https://bootstrap-datepicker.readthedocs.io/en/latest/
 
     <div class="list-group mb-3">
       {% for new in new_list %}
-        <a class="list-group-item list-group-item-action justify-content-between" href="#">
+        <a class="list-group-item justify-content-between" href="#">
+        
           <h5 class="mb-1">{{ new[0] }}</h5>
           <span class="text-muted">{{ new[2] }}</span>
           <span class="list-group-progress" style="width: {{ new[4] }}%;"></span>

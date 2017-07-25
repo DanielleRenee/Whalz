@@ -215,7 +215,7 @@ def dash():
             ibu = new_brews['data'][i].get('ibu')
 
             if abv != None: 
-                abv_display_bar = float(abv) * 10
+                abv_display_bar = float(abv) * 8
 
             if new_description != None and abv != None:
                 new_list.append([new_name, new_description, new_brewery_name, abv, abv_display_bar])
@@ -272,7 +272,7 @@ def fresh():
             ibu = new_brews['data'][i].get('ibu')
 
             if abv != None: 
-                abv_display_bar = float(abv) * 10
+                abv_display_bar = float(abv) * 8
 
             if new_description != None and abv != None:
                     new_list.append([new_name, new_description, new_brewery_name, abv, abv_display_bar])

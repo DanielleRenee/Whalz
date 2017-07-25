@@ -43,8 +43,6 @@ class Beer(db.Model):
     """
     Kind of beer in database.
 
-
-
     """
 
     __tablename__ = "beers"
